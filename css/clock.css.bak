@@ -1,0 +1,10 @@
+ .myCanvas {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-left: -255px;
+        margin-top: -255px;
+        border: 5px solid #0055aa;
+        font-weight:bold;
+        font-size:24px;
+     }

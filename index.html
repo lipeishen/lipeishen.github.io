@@ -1,0 +1,1561 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Leeps</title>
+  <meta name="author" content="李培申">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Leeps"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-50964888-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Leeps</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>目录
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>关于
+			</a>
+		  </li>
+		  
+		  
+		  <li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>动起来</a> </li>
+		
+
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <div class="page-header">
+  <h1>没有不敢想，只有不敢做</h1>
+</div>
+
+
+<div class="row page">
+
+	
+	<div class="col-md-9">
+	
+
+		<div class="slogan">
+      <i class="fa fa-heart"></i>
+      you can you up ,no can no bb.
+</div>    
+
+		<div class="mypage">
+		
+		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2018/10/24/kubernets/" >kubernets</a>
+			<span class="date"> 2018-10-24 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2018/10/24/kubernets/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2016/02/02/hello-world/" >Hello World</a>
+			<span class="date"> 2016-02-2 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2016/02/02/hello-world/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/10/17/num/" >Net Port Num</a>
+			<span class="date"> 2014-10-17 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>##常见的网络协议\端口号</p>
+<p>###一．端口的分类<br>端口的分类根据其参考对象不同有不同划分方法，如果从端口的性质来分，通常可以分为以下三类：<br>（1）公认端口（Well Known Ports）：这类端口也常称之为”常用端口”。这类端口的端口号从0到1024，它们紧密绑定于一些特定的服务。<br>     通常这些端口的通信明确表明了某种服务的协议，这种端口是不可再重新定义它的作用对象。例如：80端口实际上总是HTTP通信所使用的，<br>     而23号端口则是Telnet服务专用的。这些端口通常不会像木马这样的黑客程序利用。<br>（2）注册端口（Registered Ports）：端口号从1025到49151。它们松散地绑定于一些服务。也是说有许多服务绑定于这些端口，这些端口同样用于许多其他目的。<br>     这些端口多数没有明确的定义服务对象，不同程序可根据实际需要自己定义。（3）动态和/或私有端口（Dynamic?and/or Private Ports）：端口号从49152到65535。<br>      如果根据所提供的服务方式的不同，端口又可分为”TCP协议端口”和”UDP协议端口”两种。<br>      因为计算机之间相互通信一般采用这两种通信协议。上面所介绍的”连接方式”是一种直接与接收方进行的连接，发送信息以后，可以确认信息是否到达，<br>      这种方式大多采用TCP协议；另一种是不是直接与接收方进行连接，只管把信息放在网上发出去，而不管信息是否到达，这种方式大多采用UDP协议，IP协议也是一种<br>      无连接方式。</p>
+<p>###二．常见的网络协议<br>网际层协议：包括：IP协议、ICMP协议、ARP协议、RARP协议。<br>传输层协议：TCP协议、UDP协议。<br>应用层协议：FTP、Telnet、SMTP、HTTP、RIP、NFS、DNS。</p>
+<p>使用TCP协议的常见端口主要有以下几种：<br>（1）FTP：定义了文件传输协议，使用21端口。常说某某计算机开了FTP服务便是启动了文件传输服务。下载文件，上传主页，都要用到FTP服务。<br>（2）Telnet：它是一种用于远程登陆的端口，用户可以以自己的身份远程连接到计算机上，通过这种端口可以提供一种基于DOS模式下的通信服务。<br>             如以前的BBS是纯字符界面的，支持BBS的服务器将23端口打开，对外提供服务。<br>（3）SMTP：定义了简单邮件传送协议，现在很多邮件服务器都用的是这个协议，用于发送邮件。如常见的免费邮件服务中用的就是这个邮件服务端口，<br>           所以在电子邮件设置中常看到有这么SMTP端口设置这个栏，服务器开放的是25号端口（4）POP3：它是和SMTP对应，POP3用于接收邮件。<br>           通常情况下，POP3协议所用的是110端口。</p>
+<p>使用UDP协议端口常见的有：<br>（1）HTTP：超文本传输协议。上网浏览网页时，就得在提供网页资源的计算机上打开80号端口以提供服务。常说”WWW服务”、”Web服务器”用的就是这个端口。<br>（2）DNS：用于域名解析服务，这种服务在Windows NT系统中用得最多的。DNS用的是53号端口。<br>（3）SNMP：简单网络管理协议，使用161号端口，是用来管理网络设备的。</p>
+<p>另外代理服务器常用以下端口：<br>（1）HTTP协议代理服务器常用端口号：80/8080/3128/8081/9080<br>（2）SOCKS代理协议服务器常用端口号：1080<br>（3）FTP协议代理服务器常用端口号：21<br>（4）Telnet协议代理服务器常用端口：23</p>
+<p> 计算机端口号查询—netstat -a</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/10/17/num/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/10/17/load-and-get-method-in-hibernate/" >load and get method in hibernate</a>
+			<span class="date"> 2014-10-17 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>###根本区别说明<br>如果你使用load方法，hibernate认为该id对应的对象（数据库记录）在数据库中是一定存在的，所以它可以放心的使用，它可以放心的使用代理来 延迟加载该对象。在用到对象中的其他属性数据时才查询数据库，但是万一数据库中不存在该记录，那没办法，只能抛异常。所说的load方法抛异常是指在使用 该对象的数据时，数据库中不存在该数据时抛异常，而不是在创建这个对象时(注意：这就是由于“延迟加载”在作怪)。</p>
+<p>由于session中的缓存对于hibernate来说是个相当廉价的资源，所以在load时会先查一下session缓存看看该id对应的对象是否存在，不存在则创建代理。所以如果你知道该id在数据库中一定有对应记录存在就可以使用load方法来实现延迟加载。</p>
+<p>对于get方法，hibernate会确认一下该id对应的数据是否存在，首先在session缓存中查找，然后在二级缓存中查找，还没有就查数据库，数据库中没有就返回null。</p>
+<p>对于load和get方法返回类型：虽然好多书中都这么说：“get()永远只返回实体类”，但实际上这是不正确的，get方法如果在 session缓存中找到了该id对应的对象，如果刚好该对象前面是被代理过的，如被load方法使用过，或者被其他关联对象延迟加载过，那么返回的还是 原先的代理对象，而不是实体类对象，如果该代理对象还没有加载实体数据（就是id以外的其他属性数据），那么它会查询二级缓存或者数据库来加载数据，但是 返回的还是代理对象，只不过已经加载了实体数据。</p>
+<p>get方法首先查询session缓存，没有的话查询二级缓存，最后查询数据库；反而load方法创建时首先查询session缓存，没有就创建代理，实际使用数据时才查询二级缓存和数据库。</p>
+<p>###简单总结</p>
+<p>总之对于get和load的根本区别，一句话，hibernate对于load方法认为该数据在数据库中一定存在，可以放心的使用代理来延迟加载，如果在使用过程中发现了问题，只能抛异常；而对于get方法，hibernate一定要获取到真实的数据，否则返回null。</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/10/17/load-and-get-method-in-hibernate/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/10/08/java-common-problem/" >Java common problem</a>
+			<span class="date"> 2014-10-8 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>###Java 程序中创建对象的四种方法：</p>
+<ol>
+<li>通过New调用构造器创建</li>
+<li>通过Class对象的newInstance()方法调用构造器创建Java对象</li>
+<li>通过Java 的反序列化机制从IO流中恢复Java对象</li>
+<li>通过Java对象提供的clone()方法复制一个新的Java对象</li>
+</ol>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/10/08/java-common-problem/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/07/11/java-standard-tag-library-/" >Java Standard Tag Library</a>
+			<span class="date"> 2014-07-11 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>###核心标签库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;c:out&gt;  </span><br><span class="line">&lt;c:set&gt; </span><br><span class="line">&lt;c:remove&gt; </span><br><span class="line">&lt;c:catch&gt;</span><br><span class="line">&lt;c:if&gt;    </span><br><span class="line">&lt;c:choose&gt;(多条件判断 可以设置&lt;c:when&gt; 和&lt;c:otherwise&gt;)</span><br><span class="line">&lt;c:forEach&gt; 输出数组、集合</span><br><span class="line">&lt;c:forTokens&gt; 字符串拆分及输出操作</span><br><span class="line">&lt;c:import&gt;  将指定的路径包含到当前页面显示</span><br><span class="line">&lt;c:url&gt;     根据路径和参数生成一个新的URL</span><br><span class="line">&lt;c:redirect&gt;  客户端跳转</span><br></pre></td></tr></table></figure></p>
+<p>###格式化标签库</p>
+<p>####国际化标签<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;fmt:setLocale&gt;      设置一个全局的地区代码</span><br><span class="line">&lt;fmt:requestEncoding&gt;  设置统一的请求编码</span><br><span class="line"> ``` </span><br><span class="line">####信息显示标签</span><br></pre></td></tr></table></figure></p>
+<p><fmt:bundle> 设置临时的要读取资源文件名称</fmt:bundle></p>
+<p><fmt:message>  通过key 取得value, 通过<fmt:param>向动态文本中设置内容</fmt:param></fmt:message></p>
+<p><fmt:setbundle>  设置一个全局的要读取资源文件名称<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">####数字及日期格式化</span><br></pre></td></tr></table></figure></fmt:setbundle></p>
+<p><fmt:formatnumber>  格式化数字 （变成字符串）</fmt:formatnumber></p>
+<p><fmt:parsenumber>   反格式化数字</fmt:parsenumber></p>
+<p><fmt:formatdate></fmt:formatdate></p>
+<p><fmt:parsedate></fmt:parsedate></p>
+<p><fmt:settimezone> 设置一个全局时区</fmt:settimezone></p>
+<p><fmt:timezone>     设置一个临时时区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">###SQL标签库</span><br><span class="line"></span><br><span class="line">```&lt;sql:setDataSource&gt;</span><br><span class="line">&lt;sql:query&gt;</span><br><span class="line">&lt;sql:update&gt;</span><br><span class="line">&lt;sql:transaction&gt;</span><br></pre></td></tr></table></figure></fmt:timezone></p>
+<p>###XML 标签库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;x:out&gt;  输出XPath 指定的内容</span><br><span class="line">&lt;x:parse&gt;  进行XML解析</span><br><span class="line">&lt;x:set&gt;   将内容保存在属性范围中</span><br><span class="line">&lt;x:if&gt;</span><br><span class="line">&lt;x:choose&gt;</span><br><span class="line">&lt;x:when&gt;</span><br><span class="line">&lt;x:otherwise&gt;</span><br><span class="line">&lt;x:forEach&gt;</span><br></pre></td></tr></table></figure></p>
+<p>###函数标签库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$&#123;fn:contains()&#125;</span><br><span class="line">$&#123;fn:containsIgnorceCase()&#125;</span><br><span class="line">$&#123;fn:startsWith()&#125;</span><br><span class="line">$&#123;fn:endsWith()&#125;</span><br><span class="line">$&#123;fn:toUpperCase()&#125;</span><br><span class="line">$&#123;fn:toLowerCase()&#125;</span><br><span class="line">$&#123;fn:substring()&#125;</span><br><span class="line">$&#123;fn:split()&#125;</span><br><span class="line">$&#123;fn:join()&#125;</span><br><span class="line">$&#123;fn:escapeXml()&#125;  将 &lt;  &gt;  &quot; &apos;等替换成转义字符</span><br><span class="line">$&#123;fn:trim()&#125;</span><br><span class="line">$&#123;fn:replace()&#125;</span><br><span class="line">$&#123;fn:indexOf()&#125;</span><br><span class="line">$&#123;fn:substringBefore()&#125;</span><br><span class="line">$&#123;fn:substringAfter()&#125;</span><br></pre></td></tr></table></figure></p>
+<p>关于泛型的问题，主要是解决集合中的对象，取出时变为Object， 还需强制转化为原类型，解决办法就是使用泛型&lt;&gt;</p>
+<p><code>list&lt;String&gt; list= ArrayList&lt;String&gt;();</code></p>
+<p>Java 中集合主要分为两类接口 <code>Collection</code> 和<code>Map, Collection</code>又分为<code>Set、Queue、和List</code>三类接口，其中<code>Set</code> 是无序的不能有重复的元素，<code>List</code> 可以。</p>
+<p>泛型中<code>List&lt;Collection&gt;</code> 并不是<code>List&lt;set&gt;</code>的父类，这一点一定要搞明白。一般使用通配符<code>“？”List&lt;?&gt;,</code>它可以是任意<code>List&lt;&gt;</code>的父类，要想限制子类，需要<br><code>List&lt;? extends Collection&gt;</code></p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/07/11/java-standard-tag-library-/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/07/10/mvc与三层架构的区别/" >MVC与三层架构的区别</a>
+			<span class="date"> 2014-07-10 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<pre><code>三层架构和MVC是有明显区别的，MVC应该是展现模式（三个加起来以后才是三层架构中的UI层）
+</code></pre><p>　　　三层架构（3-tier application） 通常意义上的三层架构就是将整个业务应用划分为：表现层（UI）、业务逻辑层（BLL）、数据访问层（DAL）。区分层次的目的即为了“高内聚，低耦合”的思想。</p>
+<p>　　　　1、表现层（UI）：通俗讲就是展现给用户的界面，即用户在使用一个系统的时候他的所见所得。</p>
+<p>　　　　2、业务逻辑层（BLL）：针对具体问题的操作，也可以说是对数据层的操作，对数据业务逻辑处理。</p>
+<p>　　　　3、数据访问层（DAL）：该层所做事务直接操作数据库，针对数据的增添、删除、修改、更新、查找等。</p>
+<p>　　　　MVC是 Model-View-Controller，严格说这三个加起来以后才是三层架构中的UI层，也就是说，MVC把三层架构中的UI层再度进行了分化，分成了控制器、视图、实体三个部分，控制器完成页面逻辑，通过实体来与界面层完成通话；而C层直接与三层中的BLL进行对话。</p>
+<p>　　　　mvc可以是三层中的一个表现层框架，属于表现层。三层和mvc可以共存。</p>
+<p>　　　　三层是基于业务逻辑来分的，而mvc是基于页面来分的。</p>
+<p>　　　　MVC主要用于表现层，3层主要用于体系架构，3层一般是表现层、中间层、数据层，其中表现层又可以分成M、V、C，（Model View Controller）模型－视图－控制器</p>
+<p>　　　　曾把MVC模式和Web开发中的三层结构的概念混为一谈，直到今天才发现一直是我的理解错误。MVC模式是GUI界面开发的指导模式，基于表现层分离的思想把程序分为三大部分：Model-View-Controller，呈三角形结构。Model是指数据以及应用程序逻辑，View是指 Model的视图，也就是用户界面。这两者都很好理解，关键点在于Controller的角色以及三者之间的关系。在MVC模式中，Controller和View同属于表现层，通常成对出现。Controller被设计为处理用户交互的逻辑。一个通常的误解是认为Controller负责处理View和Model的交互，而实际上View和Model之间是可以直接通信的。由于用户的交互通常会涉及到Model的改变和View的更新，所以这些可以认为是Controller的副作用。</p>
+<p>　　　　MVC是表现层的架构，MVC的Model实际上是ViewModel，即供View进行展示的数据。 ViewModel不包含业务逻辑，也不包含数据读取。</p>
+<p>　　　　而在N层架构中，一般还会有一个Model层，用来与数据库的表相对应，也就是所谓ORM中的O.这个Model可能是POCO，也可能是包含一些验证逻辑的实体类，一般也不包含数据读取。进行数据读取的是数据访问层。而作为UI层的MVC一般不直接操作数据访问层，中间会有一个业务逻辑层封装业务逻辑、调用数据访问层。UI层（Controller）通过业务逻辑层来得到数据（Model），并进行封装（ViewModel），然后选择相应的View.</p>
+<p>　　　　MVC本来是存在于Desktop程序中的，M是指数据模型，V是指用户界面，C则是控制器。使用MVC的目的是将M和V的实现代码分离，从而使同一个程序可以使用不同的表现形式。比如一批统计数据你可以分别用柱状图、饼图来表示。C存在的目的则是确保M和V的同步，一旦M改变，V应该同步更新。</p>
+<p>　　　　MVC如何工作MVC是一个设计模式，它强制性的使应用程序的输入、处理和输出分开。使用MVC应用程序被分成三个核心部件：模型、视图、控制器。它们各自处理自己的任务。</p>
+<p>　　　　视图V视图是用户看到并与之交互的界面。对老式的Web应用程序来说，视图就是由HTML元素组成的界面，在新式的Web应用程序中，HTML依旧在视图中扮演着重要的角色，但一些新的技术已层出不穷，它们包括Macromedia Flash和象XHTML，XML/XSL，WML等一些标识语言和Web services.如何处理应用程序的界面变得越来越有挑战性。MVC一个大的好处是它能为你的应用程序处理很多不同的视图。在视图中其实没有真正的处理发生，不管这些数据是联机存储的还是一个雇员列表，作为视图来讲，它只是作为一种输出数据并允许用户操纵的方式。</p>
+<p>　　　　模型M模型表示企业数据和业务规则。在MVC的三个部件中，模型拥有最多的处理任务。被模型返回的数据是中立的，就是说模型与数据格式无关，这样一个模型能为多个视图提供数据。由于应用于模型的代码只需写一次就可以被多个视图重用，所以减少了代码的重复性。</p>
+<p>　　　　控制器C控制器接受用户的输入并调用模型和视图去完成用户的需求。所以当单击Web页面中的超链接和发送HTML表单时，控制器本身不输出任何东西和做任何处理。它只是接收请求并决定调用哪个模型构件去处理请求，然后再确定用哪个视图来显示返回的数据。</p>
+<p>　　　　模型Model 模型是应用程序的主体部分。模型表示业务数据，或者业务逻辑。 实现具体的业务逻辑、状态管理的功能。</p>
+<p>　　　　视图View 视图是应用程序中用户界面相关的部分，是用户看到并与之交互的界面。 就是与用户实现交互的页面，通常实现数据的输入和输出功能。</p>
+<p>　　　　控制器controller 控制器工作就是根据用户的输入，控制用户界面数据显示和更新model对象状态。起到控制整个业务流程的作用，实现View层跟Model层的协同工作。</p>
+<p>　　　　3层架构指：表现层（显示层） 业务逻辑层 数据访问层（持久化）如果大家非要“生搬硬套”把它和MVC扯上关系话那我就只能在这里”强扭这个瓜”了即：V 3层架构中”表现层”aspx页面对应MVC中View（继承的类不一样）</p>
+<p>　　　　C 三层架构中”表现层”的aspx.cs页面（类）对应MVC中的Controller，理解这一点并不难，大家想一想我们以前写过的 Redirect，当然它本身就是跳转了一些链接页面，而MVC中的Controller要做的更爽，它控制并显示输出了一个视图。即然所起到的作用都是对业务流程和显示信息的控制，只不过是实现手段不同而已。</p>
+<p>　　　　M 3层架构中业务逻辑层和数据访问层对应MVC中Model（必定View和Controller已找到“婆家”剩下Model只能是业务逻辑层和数据访问层了）</p>
+<p>　　　　为什么要使用 MVC大部分Web应用程序都是用像ASP，PHP，或者CFML这样的过程化（自PHP5.0版本后已全面支持面向对象模型）语言来创建的。它们将像数据库查询语句这样的数据层代码和像HTML这样的表示层代码混在一起。经验比较丰富的开发者会将数据从表示层分离开来，但这通常不是很容易做到的，它需要精心的计划和不断的尝试。MVC从根本上强制性的将它们分开。尽管构造MVC应用程序需要一些额外的工作，但是它给我们带来的好处是无庸质疑的。</p>
+<p>　　　　首先，最重要的一点是多个视图能共享一个模型，现在需要用越来越多的方式来访问你的应用程序。对此，其中一个解决之道是使用MVC，无论你的用户想要Flash界面或是 WAP 界面；用一个模型就能处理它们。由于你已经将数据和业务规则从表示层分开，所以你可以最大化的重用你的代码了。</p>
+<p>　　　　由于模型返回的数据没有进行格式化，所以同样的构件能被不同界面使用。例如，很多数据可能用HTML来表示，但是它们也有可能要用Adobe Flash和WAP来表示。模型也有状态管理和数据持久性处理的功能，例如，基于会话的购物车和电子商务过程也能被Flash网站或者无线联网的应用程序所重用。</p>
+<p>　　　　因为模型是自包含的，并且与控制器和视图相分离，所以很容易改变你的应用程序的数据层和业务规则。如果你想把你的数据库从MySQL移植到Oracle，或者改变你的基于RDBMS数据源到LDAP，只需改变你的模型即可。一旦你正确的实现了模型，不管你的数据来自数据库或是LDAP服务器，视图将会正确的显示它们。由于运用MVC的应用程序的三个部件是相互独立，改变其中一个不会影响其它两个，所以依据这种设计思想你能构造良好的松耦合的构件。</p>
+<p>　　　　对我来说，控制器也提供了一个好处，就是可以使用控制器来联接不同的模型和视图去完成用户的需求，这样控制器可以为构造应用程序提供强有力的手段。给定一些可重用的模型和视图，控制器可以根据用户的需求选择模型进行处理，然后选择视图将处理结果显示给用户。</p>
+<p>　　　　拿一个简单的登陆模块说，需求是你输入一个用户名、密码，如果输入的跟预先定义好的一样，那么就进入到正确页面，如果不一样，就提示个错误信息“你Y别在这儿蒙我，输入的不对！”。</p>
+<p>　　　　V 这个小小的模块中，起始的输入用户名密码的页面跟经过校验后显示的页面就相当于View C 而这里还需要一个controller页面，就是用于接收输入进来的用户名密码，还有经过校验后返回的一个flg（此flg就是用于判断你输入的是否正确，而跳转到相应的页面的）</p>
+<p>　　　　M 最后还缺一个Model，那么就是你那个用于校验的类了，他就是处理你输入的是否跟预先订好的一样不一样的，之后返回一个flg.这样就完全实现了逻辑跟页面的分离，我页面不管你咋整，反正我就一个显示，而controller呢也不管你Model咋判断对不对，反正我给你了用户名跟密码，你就得给我整回来一个flg来，而Medol呢，则是反正你敢给我个用户名跟密码，我就给你整过去个flg</p>
+<p>　　　　m 提供数据，数据之间的关系，转化等。并可以通知视图和控制器自己哪些地方发生了变化。</p>
+<p>　　　　v 提供显示，能根据m的改变来更新自己c 比如视图做了点击一个按钮，会先发给这个视图的控制器，然后这个控制器来决定做什么操作（让模型更新数据，控制视图改变）</p>
+<p>　　　　mvc是一个复合模式mv，mc都是观察者模式m内部的组件组合模式vc之间是策略模式（可以随时更换不同的控制器）</p>
+<p>　　————————————-</p>
+<p>　　　　MVC模式是上世纪70年代提出，最初用于Smalltalk平台上的。</p>
+<p>　　　　MVC是表现模式，是用来向用户展现的许多组建的一个模式（UI/Presentation Patten）</p>
+<p>　　　　MVC有三种角色：Model：用来储存数据的组件（与领域模型概念不同，两者会相互交叉）</p>
+<p>　　　　View：从Model中获取数据进行内容展示的组件。同样的Model在不同的View下可展示不同的效果。获取Model的状态，而不对其进行操作。</p>
+<p>　　　　Controller：接受并处理用户指令（操作Model（业务）），选择一个View进行操作。</p>
+<p>　　　　MVC概述：协作存在单向引用，例如Model不知道View和Controller的存在。View不知道Controller的存在。这就隔离了表现和数据。View和controller是单向引用。而实际中View和Controller也是有数据交互的。</p>
+<p>　　　　MVC的重要特点是分离。两种分离：View和数据（Model）的分离使用不同的View对相同的数据进行展示；分离可视和不可视的组件，能够对Model进行独立测试。因为分离了可视组件减少了外部依赖利于测试。（数据库也是一种外部组件）</p>
+<p>　　　　View和表现逻辑（Controller）的分离Controller是一个表现逻辑的组件，并非一个业务逻辑组件。MVC可以作为表现模式也可以作为建构模式，意味这Controller也可以是业务逻辑。分离逻辑和具体展示，能够对逻辑进行独立测试。</p>
+<p>　　　　MVC和三层架构MVC与三层架构类似么？</p>
+<p>　　　　View-UI Layer | Controller-Bussiness Layer | Model-Data Access Layer其实这样是错误的MVC是表现模式（Presentation Pattern）</p>
+<p>　　　　三层架构是典型的架构模式（Architecture Pattern）</p>
+<p>　　　　三层架构的分层模式是典型的上下关系，上层依赖于下层。但MVC作为表现模式是不存在上下关系的，而是相互协作关系。即使将MVC当作架构模式，也不是分层模式。MVC和三层架构基本没有可比性，是应用于不同领域的技术。</p>
+<pre><code>原文出处 悦子洺果的部落格 http://blog.sina.com.cn/s/blog_9875559401012z7f.html
+</code></pre>
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/07/10/mvc与三层架构的区别/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/06/29/怎么让自己的网站被百度收录/" >怎么让自己的网站被百度收录</a>
+			<span class="date"> 2014-06-29 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>简单介绍一下，自己的网站被百度检索到的操作步骤。百度检索网页靠的是网络蜘蛛，只要把网络蜘蛛放在你的站点中，百度自然就会检索到你的网站，所以，这就是原理。</p>
+<p>首先 进入网址 <a href="http://tool.chinaz.com/robots/" target="_blank" rel="noopener">http://tool.chinaz.com/robots/</a> 中， 进入之后，有个Sitemap:, 后面的网址填写为 <code>http://(yoursite)/sitmap.xml</code> ,其他的选项默认就行，然后点击<br>“生成”，会生成一个robots.txt 文件， 最后把这个文件放在你的站点的根路径下，大概4-5天，你的网站就能被百度检索到了，就这么简单。</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/06/29/怎么让自己的网站被百度收录/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/06/22/dynamic-tagcloud/" >Dynamic tagcloud</a>
+			<span class="date"> 2014-06-22 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<h3 id="下载所需的东西"><a href="#下载所需的东西" class="headerlink" title="下载所需的东西"></a>下载所需的东西</h3><p>要创建动态的标签云，首先从 <a href="http://pan.baidu.com/s/1kT4yyDD" target="_blank" rel="noopener">http://pan.baidu.com/s/1kT4yyDD</a> 下载所需要的js 文件和flash ，已经有现成的东西了，所以省去了很多的精力，但是可能不利于自己成长。<br>大牛们基本上都是自己写出想要的东西，毕竟不是大牛，所以只好这么办了。</p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>把你下载的js 和flash 放在你的js文件夹下，这里我们要做的是一个widget,所以进入自己的layout/_widget 下创建 自己的模板文件 tagloud.ejs ,代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">  &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">#cloud&#123;background-color:#551A8B;color:#FFF&#125;</span><br><span class="line">a&#123;text-decoration:none;&#125;</span><br><span class="line">strong&#123;color:#FF0000&#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"> &lt;script type=&quot;text/javascript&quot; src=&quot;js/swfobject.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"> &lt;h4 class=&quot;tag_box&quot;&gt;&lt;%= __(&apos;tagcloud&apos;) %&gt;&lt;/h4&gt; </span><br><span class="line"> &lt;div id=&quot;cloud&quot;&gt;</span><br><span class="line">&lt;% if (site.tags.length)&#123; %&gt;</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">   &lt;div class=&quot;tagcloudlist clearfix&quot;&gt;</span><br><span class="line">     </span><br><span class="line">      &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var cloud = new SWFObject(&quot;js/tagcloud.swf&quot;, &quot;tagcloudflash&quot;, &quot;200&quot;, &quot;170&quot;, &quot;9&quot;, &quot;#ffffff&quot;);</span><br><span class="line">cloud.addParam(&quot;wmode&quot;, &quot;transparent&quot;);</span><br><span class="line">cloud.addParam(&quot;allowScriptAccess&quot;, &quot;always&quot;);</span><br><span class="line">cloud.addVariable(&quot;tcolor&quot;, &quot;0xFFFFFF&quot;);</span><br><span class="line">cloud.addVariable(&quot;tcolor2&quot;, &quot;0xFFFFFF&quot;);</span><br><span class="line">cloud.addVariable(&quot;hicolor&quot;, &quot;0x999999&quot;);</span><br><span class="line">cloud.addVariable(&quot;tspeed&quot;, &quot;150&quot;);</span><br><span class="line">cloud.addVariable(&quot;distr&quot;, &quot;true&quot;);</span><br><span class="line">cloud.addVariable(&quot;mode&quot;, &quot;tags&quot;);</span><br><span class="line"></span><br><span class="line">var str = &apos;&lt;tags&gt;  &lt;%- tagcloud() %&gt; &lt;/tags&gt;&apos;;</span><br><span class="line">var newStr=encodeURIComponent(str);</span><br><span class="line">cloud.addVariable(&quot;tagcloud&quot;,newStr);</span><br><span class="line">cloud.write(&quot;cloud&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">      </span><br><span class="line">     &lt;/div&gt;   </span><br><span class="line">  </span><br><span class="line">&lt;% &#125; %&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>这些代码只是针对我的文件，你想要制作自己的东西，可以按照下载文件里面的index.html 文件中的说明来操作，可能与本人的不太一样，但是最后效果都一样，条条大路通罗马，哈哈，小伙伴们，<br>还等什么呢，赶紧行动吧。</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/06/22/dynamic-tagcloud/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/06/10/clock/" >clock</a>
+			<span class="date"> 2014-06-10 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;HTML5环形时钟&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">    .myCanvas &#123;</span><br><span class="line">        position: absolute;</span><br><span class="line">        left: 50%;</span><br><span class="line">        top: 50%;</span><br><span class="line">        margin-left: -255px;</span><br><span class="line">        margin-top: -255px;</span><br><span class="line">        border: 5px solid #0055aa;</span><br><span class="line">        font-weight:bold;</span><br><span class="line">        font-size:24px;</span><br><span class="line">     &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;canvas id=&quot;myCanvas&quot; class=&quot;myCanvas&quot; width=&quot;500px&quot; height=&quot;500px&quot;&gt;&lt;/canvas&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">function draw() &#123;</span><br><span class="line">    var can = document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">    var canvas = can.getContext(&quot;2d&quot;);</span><br><span class="line"></span><br><span class="line">    if (canvas) &#123;</span><br><span class="line">        canvas.fillStyle=&quot;#F00&quot;;</span><br><span class="line">        canvas.font=&quot;18px Calibri&quot;;</span><br><span class="line">        var time = new Date();</span><br><span class="line">        var i = time.getSeconds() * 6 - 90;</span><br><span class="line"></span><br><span class="line">        if (i == -90) &#123;</span><br><span class="line">            i = 270;</span><br><span class="line">        &#125;</span><br><span class="line">        canvas.clearRect(0, 0, 500, 500);</span><br><span class="line">        canvas.beginPath();</span><br><span class="line">        canvas.strokeStyle = &quot;#6AF&quot;;</span><br><span class="line">        canvas.fillText(time.getSeconds()+&quot;S&quot;,415,250);</span><br><span class="line">        canvas.lineWidth = 30;</span><br><span class="line">        canvas.arc(250, 250, 150, -90 * Math.PI / 180, i * Math.PI / 180, false);</span><br><span class="line">        canvas.stroke();</span><br><span class="line"></span><br><span class="line">        var j = time.getMinutes() * 6 - 90;</span><br><span class="line">        if (j == -90) &#123;</span><br><span class="line">            j = 270;</span><br><span class="line">        &#125;</span><br><span class="line">        canvas.beginPath();</span><br><span class="line">        canvas.strokeStyle = &quot;#5FB&quot;;</span><br><span class="line">        canvas.lineWidth = 30;</span><br><span class="line">        canvas.fillText(time.getMinutes()+&quot;M&quot;,355,250);</span><br><span class="line">        canvas.arc(250, 250, 90, -90 * Math.PI / 180, j * Math.PI / 180, false);</span><br><span class="line">        canvas.stroke();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        var k = (time.getHours() % 12) * 30 - 90;</span><br><span class="line">        if (k == -90) &#123;</span><br><span class="line">            k = 270;</span><br><span class="line">        &#125;</span><br><span class="line">        canvas.beginPath();</span><br><span class="line">        canvas.strokeStyle = &quot;#8F8&quot;;</span><br><span class="line">        canvas.lineWidth = 30;</span><br><span class="line">        canvas.fillText(time.getHours()+&quot;H&quot;,295,250);</span><br><span class="line">        canvas.arc(250, 250, 30, -90 * Math.PI / 180, k * Math.PI / 180, false);</span><br><span class="line">        canvas.stroke();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        console.log(&quot;this is Error&quot;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">setInterval(draw, 500);</span><br><span class="line">window.onload=draw;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;HTML CLOCK&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;canvas width=&quot;500&quot; height=&quot;500&quot; id=&quot;clock&quot;&gt;</span><br><span class="line">		你的浏览器不支持canvas标签，时针显示不出来哦！</span><br><span class="line">	&lt;/canvas&gt;</span><br><span class="line">	</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	//画布背景颜色</span><br><span class="line">	var clockBackGroundColor = &quot;#ABCDEF&quot;;</span><br><span class="line">	//时针颜色</span><br><span class="line">	var hourPointColor = &quot;#000&quot;;</span><br><span class="line">	//时针粗细</span><br><span class="line">	var hourPointWidth = 7;</span><br><span class="line">	//时针长度</span><br><span class="line">	var hourPointLength = 100;</span><br><span class="line">	//分针颜色</span><br><span class="line">	var minPointColor = &quot;#000&quot;;</span><br><span class="line">	//分针粗细</span><br><span class="line">	var minPointWidth = 5;</span><br><span class="line">	//分针长度</span><br><span class="line">	var minPointLength = 150;</span><br><span class="line">	//秒针颜色</span><br><span class="line">	var secPointColor = &quot;#F00&quot;;</span><br><span class="line">	//秒针粗细</span><br><span class="line">	var secPointWidth = 3;</span><br><span class="line">	//秒针长度</span><br><span class="line">	var secPointLength = 170;</span><br><span class="line">	//表盘颜色</span><br><span class="line">	var clockPanelColor = &quot;#ABCDEF&quot;;</span><br><span class="line">	//表盘刻度颜色</span><br><span class="line">	var scaleColor = &quot;#000&quot;;</span><br><span class="line">	//表盘大刻度宽度 3 6 9 12</span><br><span class="line">	var scaleBigWidth = 9;</span><br><span class="line">	//表盘大刻度的长度</span><br><span class="line">	var scaleBigLength = 15;</span><br><span class="line">	//表盘小刻度的宽度</span><br><span class="line">	var scaleSmallWidth = 5;</span><br><span class="line">	//表盘小刻度的长度</span><br><span class="line">	var scaleSmallLength = 10;</span><br><span class="line">	//圆心颜色</span><br><span class="line">	var centerColor = &apos;red&apos;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	//时钟画布</span><br><span class="line">	var clock = document.getElementById(&apos;clock&apos;);</span><br><span class="line">	clock.style.background = clockBackGroundColor;</span><br><span class="line">	//时针画布的作图环境（画板）</span><br><span class="line">	var panel = clock.getContext(&apos;2d&apos;);</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	//画线</span><br><span class="line">	/**</span><br><span class="line">	*画线段</span><br><span class="line">	*</span><br><span class="line">	*</span><br><span class="line">	*/</span><br><span class="line">	function drowLine(p,width,color,startX,startY,endX,endY,ran,cX,cY)&#123;</span><br><span class="line">		//保存传入的画板，相当于每次作画新开一个图层</span><br><span class="line">		p.save();</span><br><span class="line">		//设置画笔宽度</span><br><span class="line">		p.lineWidth = width;</span><br><span class="line">		//设置画笔颜色</span><br><span class="line">		p.strokeStyle = color;</span><br><span class="line">		//新开启作图路径，避免和之前画板上的内容产生干扰</span><br><span class="line">		p.beginPath();</span><br><span class="line">		p.translate(cX,cY);</span><br><span class="line">		//旋转</span><br><span class="line">		p.rotate(ran);</span><br><span class="line">		//移动画笔到开始位置</span><br><span class="line">		p.moveTo(startX,startY);</span><br><span class="line">		//移动画笔到结束位置</span><br><span class="line">		p.lineTo(endX,endY);</span><br><span class="line">		//画线操作</span><br><span class="line">		p.stroke();</span><br><span class="line">		//关闭作图路径，避免和之后在画板上绘制的内容产生干扰</span><br><span class="line">		p.closePath();</span><br><span class="line">		//在传入的画板对象上覆盖图层</span><br><span class="line">		p.restore();</span><br><span class="line">	&#125;</span><br><span class="line">	/**</span><br><span class="line">	*画水平线</span><br><span class="line">	*/</span><br><span class="line">	function drowHorizontalLine(p,width,length,color,startX,startY,ran,cX,cY)&#123;</span><br><span class="line">		drowLine(p,width,color,startX,startY,startX+length,startY,ran,cX,cY);</span><br><span class="line">	&#125; </span><br><span class="line">	/**</span><br><span class="line">	*画圈圈</span><br><span class="line">	*/</span><br><span class="line">	function drowCircle(p,width,color,centreX,centreY,r)&#123;</span><br><span class="line">		p.save();</span><br><span class="line">		//设置画笔宽度</span><br><span class="line">		p.lineWidth = width;</span><br><span class="line">		//设置画笔颜色</span><br><span class="line">		p.strokeStyle = color;</span><br><span class="line">		//新开启作图路径，避免和之前画板上的内容产生干扰</span><br><span class="line">		p.beginPath();</span><br><span class="line">		//画圈圈</span><br><span class="line">		p.arc(centreX,centreY,r,0,360,false);</span><br><span class="line">		//画线操作</span><br><span class="line">		p.stroke();</span><br><span class="line">		//关闭作图路径，避免和之后在画板上绘制的内容产生干扰</span><br><span class="line">		p.closePath();</span><br><span class="line">		//在传入的画板对象上覆盖图层</span><br><span class="line">		p.restore();</span><br><span class="line">	&#125;</span><br><span class="line">	function drowPoint(p,width,color,centreX,centreY,r)&#123;</span><br><span class="line">		p.save();</span><br><span class="line">		//设置画笔宽度</span><br><span class="line">		p.lineWidth = width;</span><br><span class="line">		//设置画笔颜色</span><br><span class="line">		p.fillStyle = color;</span><br><span class="line">		//新开启作图路径，避免和之前画板上的内容产生干扰</span><br><span class="line">		p.beginPath();</span><br><span class="line">		//画圈圈</span><br><span class="line">		p.arc(centreX,centreY,r,0,360,false);</span><br><span class="line">		//画线操作</span><br><span class="line">		p.fill();</span><br><span class="line">		//关闭作图路径，避免和之后在画板上绘制的内容产生干扰</span><br><span class="line">		p.closePath();</span><br><span class="line">		//在传入的画板对象上覆盖图层</span><br><span class="line">		p.restore();</span><br><span class="line">	&#125;</span><br><span class="line">	function drowScales(p)&#123;</span><br><span class="line">		//画小刻度</span><br><span class="line">		for(var i = 0;i &lt; 60;i++)&#123;</span><br><span class="line">			drowHorizontalLine(p,scaleSmallWidth,scaleSmallLength,scaleColor,195-scaleSmallLength,0,i*6*Math.PI/180,250,250);</span><br><span class="line">		&#125;</span><br><span class="line">		//画大刻度</span><br><span class="line">		for(var i = 0;i &lt; 12;i++)&#123;</span><br><span class="line">			drowHorizontalLine(p,i%3==0?scaleBigWidth*1.2:scaleBigWidth,i%3==0?scaleBigLength*1.2:scaleBigLength,scaleColor,195-scaleBigLength,0,i*30*Math.PI/180,250,250);</span><br><span class="line">			//可以添加数字刻度</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	function drowHourPoint(p,hour)&#123;</span><br><span class="line">		drowHorizontalLine(p,hourPointWidth,hourPointLength,hourPointColor,-10,0,(hour-3)*30*Math.PI/180,250,250);</span><br><span class="line">	&#125;</span><br><span class="line">	function drowMinPoint(p,min)&#123;</span><br><span class="line">		drowHorizontalLine(p,minPointWidth,minPointLength,minPointColor,-15,0,(min-15)*6*Math.PI/180,250,250);</span><br><span class="line">	&#125;</span><br><span class="line">	function drowSecPoint(p,sec)&#123;</span><br><span class="line">		drowHorizontalLine(p,secPointWidth,secPointLength,secPointColor,-15,0,(sec-15)*6*Math.PI/180,250,250);</span><br><span class="line">	&#125;</span><br><span class="line">	function drowClock()&#123;</span><br><span class="line">		panel.clearRect(0,0,500,500);</span><br><span class="line">		</span><br><span class="line">		panel.fillText(&quot;联系作者 Kerbores@gmail.com&quot;,10,20);</span><br><span class="line">		panel.fillText(&quot;http://kipy.xicp.net&quot;,10,40);</span><br><span class="line">		var date = new Date();</span><br><span class="line">		var sec = date.getSeconds();</span><br><span class="line">		var min = date.getMinutes();</span><br><span class="line">		var hour = date.getHours() + min/60;</span><br><span class="line">		drowCircle(panel,7,&apos;blue&apos;,250,250,200);</span><br><span class="line">		drowScales(panel);</span><br><span class="line">		</span><br><span class="line">		drowHourPoint(panel,hour);</span><br><span class="line">		drowMinPoint(panel,min);</span><br><span class="line">		drowSecPoint(panel,sec);</span><br><span class="line">		</span><br><span class="line">		drowPoint(panel,1,centerColor,250,250,7);</span><br><span class="line">		//drowHorizontalLine(panel,10,10,&apos;red&apos;,-5,0,0,250,250);</span><br><span class="line">	&#125;</span><br><span class="line">	//drowHorizontalLine(panel,7,30,&apos;#F00&apos;,0,0,Math.PI,250,250);</span><br><span class="line">	drowClock();</span><br><span class="line">	setInterval(drowClock,1000);</span><br><span class="line">	function save()&#123;</span><br><span class="line">		var image = clock.toDataURL(&quot;image/png&quot;).replace(&quot;image/png&quot;, &quot;image/octet-stream&quot;); </span><br><span class="line">		location.href=image;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html lang=&quot;en-US&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;style&gt;</span><br><span class="line">	 	  body&#123;background: #314B62&#125;</span><br><span class="line">		  canvas&#123;background: #eee;display: block;margin: 30px auto&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;canvas height=&apos;400px&apos; width=&apos;400px&apos; id=&apos;canvas&apos;&gt;&lt;/canvas&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">   var  oCanvas = document.getElementById( &apos;canvas&apos; );</span><br><span class="line">   var cxt = oCanvas.getContext( &apos;2d&apos; );  </span><br><span class="line"></span><br><span class="line">   function Clock()&#123;</span><br><span class="line">      this.date = new Date();</span><br><span class="line">      this.h = this.date.getHours();</span><br><span class="line">      this.m = this.date.getMinutes();</span><br><span class="line">      this.s = this.date.getSeconds();</span><br><span class="line">      this.radius = 150; //半径</span><br><span class="line">      this.drawDial();</span><br><span class="line">      this.drawHours();</span><br><span class="line">      this.drawMinutes();</span><br><span class="line">      this.drawSecond();</span><br><span class="line">    //  this.drawText();</span><br><span class="line">      this.updateTime();</span><br><span class="line">   &#125;;</span><br><span class="line">   Clock.prototype.updateTime = function() &#123;//更新时间</span><br><span class="line">      this.date = new Date();</span><br><span class="line">      this.h = this.date.getHours();</span><br><span class="line">      this.m = this.date.getMinutes();</span><br><span class="line">      this.s = this.date.getSeconds();</span><br><span class="line">      cxt.clearRect(0,0,400,400)</span><br><span class="line">     </span><br><span class="line">      this.drawDial();</span><br><span class="line">      this.drawHours();</span><br><span class="line">      this.drawMinutes();</span><br><span class="line">      this.drawSecond();</span><br><span class="line">     // this.drawText();</span><br><span class="line">      var self = this;</span><br><span class="line">      setTimeout(function()&#123;</span><br><span class="line">           self.updateTime();</span><br><span class="line">      &#125;,1000);</span><br><span class="line">   &#125;;</span><br><span class="line">   Clock.prototype.drawText = function() &#123;//写入文字</span><br><span class="line">       cxt.fillStyle=&quot;#000&quot;;</span><br><span class="line">       cxt.font=&quot;16px Microsoft YaHei&quot;;</span><br><span class="line">       cxt.textBaseline=&quot;middle&quot;;</span><br><span class="line">       cxt.fillText(&quot;author:涛涛&quot;,200,270);</span><br><span class="line">   &#125;;</span><br><span class="line">   Clock.prototype.drawDial =  function() &#123; //画表盘</span><br><span class="line">      cxt.fillStyle = &apos;#E3E0E0&apos;;</span><br><span class="line">      cxt.beginPath();</span><br><span class="line">      cxt.lineWidth = 3;</span><br><span class="line">      cxt.lineCap = &quot;round&quot;; </span><br><span class="line">      cxt.arc( 200, 200, this.radius, 0, Math.PI*2, false);</span><br><span class="line">      cxt.shadowColor = &quot;#526A89&quot;;</span><br><span class="line">      cxt.shadowOffsetX = 2;   //在X轴上偏移</span><br><span class="line">      cxt.shadowOffsetY = 2;   //在Y轴上偏移</span><br><span class="line">      </span><br><span class="line">      cxt.shadowBlur = 4;    //高斯模糊  </span><br><span class="line">      cxt.closePath();</span><br><span class="line">      cxt.fill();</span><br><span class="line">      cxt.strokeStyle = &apos;#313136&apos;;</span><br><span class="line">      cxt.stroke();</span><br><span class="line">      </span><br><span class="line">      cxt.fillStyle=&quot;#3E3B3B&quot;;  //设置文字</span><br><span class="line">      cxt.font=&quot;13px Arial&quot;;</span><br><span class="line">      cxt.textBaseline=&quot;middle&quot;;</span><br><span class="line">      cxt.textAlign=&apos;center&apos;;</span><br><span class="line"></span><br><span class="line">      for( var i = 0; i &lt; 60; i++ ) &#123;</span><br><span class="line">           if( i%5 == 0 )&#123; //画表盘时钟刻度</span><br><span class="line">                 cxt.beginPath();</span><br><span class="line">                  cxt.lineWidth = 2;</span><br><span class="line">                 cxt.moveTo( this.getPos(12,i,this.radius)[0], this.getPos(12,i,this.radius)[1] );</span><br><span class="line">                 cxt.lineTo( this.getPos(12,i,this.radius-14)[0], this.getPos(12,i,this.radius-14)[1] );</span><br><span class="line">                 cxt.stroke();</span><br><span class="line">                 cxt.fillText( i/5 == 0 ? 12 : i/5, this.getPos(12,i/5,this.radius-28)[0], this.getPos(12,i/5,this.radius-28)[1] );</span><br><span class="line">           &#125;else&#123;  //画表盘秒钟刻度</span><br><span class="line">                 var point1 = this.getPos( 60, i, this.radius );</span><br><span class="line">                 var point2 = this.getPos( 60, i, this.radius-8 );</span><br><span class="line">                 cxt.beginPath();</span><br><span class="line">                 cxt.lineCap = &apos;square&apos;;</span><br><span class="line">                 cxt.moveTo( point1[0], point1[1] );</span><br><span class="line">                 cxt.lineTo( point2[0], point2[1] );</span><br><span class="line">                 cxt.stroke();</span><br><span class="line">           &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">   &#125;;</span><br><span class="line">   Clock.prototype.getPos = function( n, i, l ) &#123; //n 个数 i 索引, l 长度(取反)</span><br><span class="line">         var hd =  Math.PI/180 * 360/n * i;</span><br><span class="line">         var x = 200 + Math.sin( hd ) * l;</span><br><span class="line">         var y = 200- Math.cos( hd ) * l; </span><br><span class="line">         return [x,y];</span><br><span class="line">   &#125;;</span><br><span class="line">   Clock.prototype.drawHours = function() &#123;//画时钟</span><br><span class="line">         var pos = this.getPos( 12, this.h, 35 );</span><br><span class="line"></span><br><span class="line">         cxt.lineCap = &quot;round&quot;; </span><br><span class="line">         cxt.lineWidth = 2 ;</span><br><span class="line">         cxt.moveTo( 200, 200 );</span><br><span class="line">         cxt.lineTo( pos[0], pos[1] );</span><br><span class="line">         cxt.stroke();</span><br><span class="line">   &#125;;</span><br><span class="line">   Clock.prototype.drawMinutes  = function() &#123;//画分钟</span><br><span class="line">         var pos = this.getPos( 60, this.m, 65);</span><br><span class="line"></span><br><span class="line">         cxt.lineWidth = 2;</span><br><span class="line">         cxt.moveTo( 200, 200 );</span><br><span class="line">         cxt.lineTo( pos[0], pos[1] );</span><br><span class="line">         cxt.stroke();</span><br><span class="line">   &#125;;</span><br><span class="line">   Clock.prototype.drawSecond = function() &#123;//画秒钟</span><br><span class="line">         var pos = this.getPos( 60, this.s, 95);</span><br><span class="line">         cxt.moveTo( 200, 200 );</span><br><span class="line">         cxt.lineTo( pos[0], pos[1] );</span><br><span class="line">         cxt.stroke();</span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   var taotao = new Clock();</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/06/10/clock/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/06/09/androids-problem/" >Android&#39;s problem</a>
+			<span class="date"> 2014-06-9 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<h3 id="Android-工程中main-xml文件中提示Attribute-is-missing-the-Android-namespace-prefix-错误的解决办法："><a href="#Android-工程中main-xml文件中提示Attribute-is-missing-the-Android-namespace-prefix-错误的解决办法：" class="headerlink" title="Android 工程中main.xml文件中提示Attribute is missing the Android namespace prefix 错误的解决办法："></a>Android 工程中main.xml文件中提示Attribute is missing the Android namespace prefix 错误的解决办法：</h3><p> 今天编写XML文件时，出现了Attribute is missing the Android namespace prefix的错误，开始一直找没找出原因，后来仔细一看原来只是一个很简单的单词书写错误，android写成了andriod了。</p>
+<p> ###怎么让eclipse 连接真实设备</p>
+<p> 首先打开你的设备，连接电脑，在安卓设备上找到 设置-&gt; 开发人员选项，选中你要使用的开发功能，安装驱动程序。</p>
+<p> 然后打开eclipse, 在 window-&gt;show view-&gt;other-&gt;Android-&gt;Devices ,选中你的设备名称就行了。</p>
+<p> 怎么让项目在你的设备中运行呢？只要连好设备，直接运行项目，它会再次让你选择需要运行的目标位置，你需要再次选择你的真实设备就行了。</p>
+<p> 最好看看你的设备Android 版本，最好和开发的SDK中版本一直，否则会警告，但是也能运行。</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/06/09/androids-problem/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/06/01/http-status-code/" >HTTP Status Code</a>
+			<span class="date"> 2014-06-1 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>浏览器HTTP出现 数字状态码（HTTP Status Code）的意思<br>一些常见的状态码为：</p>
+<p>200 - 服务器成功返回网页<br>404 - 请求的网页不存在<br>503 - 服务不可用<br>详细分解：</p>
+<p>1xx（临时响应）<br>表示临时响应并需要请求者继续执行操作的状态代码。</p>
+<p>代码   说明<br>100   （继续） 请求者应当继续提出请求。 服务器返回此代码表示已收到请求的第一部分，正在等待其余部分。<br>101   （切换协议） 请求者已要求服务器切换协议，服务器已确认并准备切换。 </p>
+<p>2xx （成功）<br>表示成功处理了请求的状态代码。</p>
+<p>代码   说明<br>200   （成功）  服务器已成功处理了请求。 通常，这表示服务器提供了请求的网页。<br>201   （已创建）  请求成功并且服务器创建了新的资源。<br>202   （已接受）  服务器已接受请求，但尚未处理。<br>203   （非授权信息）  服务器已成功处理了请求，但返回的信息可能来自另一来源。<br>204   （无内容）  服务器成功处理了请求，但没有返回任何内容。<br>205   （重置内容） 服务器成功处理了请求，但没有返回任何内容。<br>206   （部分内容）  服务器成功处理了部分 GET 请求。 </p>
+<p>3xx （重定向）<br>表示要完成请求，需要进一步操作。 通常，这些状态代码用来重定向。</p>
+<p>代码   说明<br>300   （多种选择）  针对请求，服务器可执行多种操作。 服务器可根据请求者 (user agent) 选择一项操作，或提供操作列表供请求者选择。<br>301   （永久移动）  请求的网页已永久移动到新位置。 服务器返回此响应（对 GET 或 HEAD 请求的响应）时，会自动将请求者转到新位置。<br>302   （临时移动）  服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置来进行以后的请求。<br>303   （查看其他位置） 请求者应当对不同的位置使用单独的 GET 请求来检索响应时，服务器返回此代码。<br>304   （未修改） 自从上次请求后，请求的网页未修改过。 服务器返回此响应时，不会返回网页内容。<br>305   （使用代理） 请求者只能使用代理访问请求的网页。 如果服务器返回此响应，还表示请求者应使用代理。<br>307   （临时重定向）  服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置来进行以后的请求。 </p>
+<p>4xx（请求错误）<br>这些状态代码表示请求可能出错，妨碍了服务器的处理。</p>
+<p>代码   说明<br>400   （错误请求） 服务器不理解请求的语法。<br>401   （未授权） 请求要求身份验证。 对于需要登录的网页，服务器可能返回此响应。<br>403   （禁止） 服务器拒绝请求。<br>404   （未找到） 服务器找不到请求的网页。<br>405   （方法禁用） 禁用请求中指定的方法。<br>406   （不接受） 无法使用请求的内容特性响应请求的网页。<br>407   （需要代理授权） 此状态代码与 401（未授权）类似，但指定请求者应当授权使用代理。<br>408   （请求超时）  服务器等候请求时发生超时。<br>409   （冲突）  服务器在完成请求时发生冲突。 服务器必须在响应中包含有关冲突的信息。<br>410   （已删除）  如果请求的资源已永久删除，服务器就会返回此响应。<br>411   （需要有效长度） 服务器不接受不含有效内容长度标头字段的请求。<br>412   （未满足前提条件） 服务器未满足请求者在请求中设置的其中一个前提条件。<br>413   （请求实体过大） 服务器无法处理请求，因为请求实体过大，超出服务器的处理能力。<br>414   （请求的 URI 过长） 请求的 URI（通常为网址）过长，服务器无法处理。<br>415   （不支持的媒体类型） 请求的格式不受请求页面的支持。<br>416   （请求范围不符合要求） 如果页面无法提供请求的范围，则服务器会返回此状态代码。<br>417   （未满足期望值） 服务器未满足”期望”请求标头字段的要求。 </p>
+<p>5xx（服务器错误）<br>这些状态代码表示服务器在尝试处理请求时发生内部错误。 这些错误可能是服务器本身的错误，而不是请求出错。</p>
+<p>代码   说明<br>500   （服务器内部错误）  服务器遇到错误，无法完成请求。<br>501   （尚未实施） 服务器不具备完成请求的功能。 例如，服务器无法识别请求方法时可能会返回此代码。<br>502   （错误网关） 服务器作为网关或代理，从上游服务器收到无效响应。<br>503   （服务不可用） 服务器目前无法使用（由于超载或停机维护）。 通常，这只是暂时状态。<br>504   （网关超时）  服务器作为网关或代理，但是没有及时从上游服务器收到请求。<br>505   （HTTP 版本不受支持） 服务器不支持请求中所用的 HTTP 协议版本。</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/06/01/http-status-code/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/05/23/r语言的数据集/" >R语言的数据集</a>
+			<span class="date"> 2014-05-23 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>###向量<br>向量是用于存储数值型、字符型或逻辑型数据的一维数组。执行组合功能的函数c()可用来<br>创建向量。各类向量如下例所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a&lt;- c(1,23,4,5,6,-2,4)</span><br><span class="line">b&lt;- c(“one”,”two”,”three”)</span><br><span class="line">c&lt;- c(TRUE,TRUE,FALSE,TRUE,FALSE)</span><br></pre></td></tr></table></figure></p>
+<p>注意 标量是只含一个元素的向量，例如f &lt;- 3、g &lt;- “US”和h &lt;- TRUE。它们用于保存<br>常量。</p>
+<p>###矩阵<br>矩阵是一个二维数组，只是每个元素都拥有相同的模式（数值型、字符型或逻辑型）。可通<br>过函数matrix创建矩阵。一般使用格式为：</p>
+<figure class="highlight plain"><figcaption><span><- matrix(vector,nrow<="" span=""></-></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dimnames=list(char_vector_rownames,char_vector_colnames) )</span><br></pre></td></tr></table></figure>
+<p>其中vector包含了矩阵的元素，nrow和ncol用以指定行和列的维数，dimnames包含了可选的、<br>以字符型向量表示的行名和列名。选项byrow则表明矩阵应当按行填充（byrow=TRUE）还是按<br>列填充（byrow=FALSE），默认情况下按列填充。</p>
+<p>###数组<br>数组（array）与矩阵类似，但是维度可以大于2。数组可通过array函数创建，形式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myarray &lt;- array(vector,dimensions,dimnames)</span><br></pre></td></tr></table></figure>
+<p>其中vector包含了数组中的数据，dimensions是一个数值型向量，给出了各个维度下标的最大<br>值，而dimnames是可选的、各维度名称标签的列表。<br>下面是一个（2×3×4）数值型数组的示例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dim1 &lt;- c(“A1”,”A2”)</span><br><span class="line">dim2 &lt;- c(“B1”,”B2”,”B3”)</span><br><span class="line">dim3 &lt;- c(“C1”,”C2”,”C3”,”C4”)</span><br><span class="line">z &lt;- array(1:24, c(2,3,4),dimnames=list(dim1,dim2,dim3))</span><br><span class="line">z</span><br></pre></td></tr></table></figure>
+<p>###数据框<br>由于不同的列可以包含不同模式（数值型、字符型等）的数据，数据框的概念较矩阵来说更<br>为一般。它与你通常在SAS、SPSS和Stata中看到的数据集类似。数据框将是你在R中最常处理的<br>数据结构。<br>表2-1所示的病例数据集包含了数值型和字符型数据。由于数据有多种模式，无法将此数据<br>集放入一个矩阵。在这种情况下，使用数据框是最佳选择。<br>数据框可通过函数data.frame()创建：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mydata &lt;- data.frame(col1,col2,col3,…)</span><br></pre></td></tr></table></figure>
+<p>其中的列向量col1, col2, col3,… 可为任何类型（如字符型、数值型或逻辑型）。每一列的<br>名称可由函数names指定。代码清单2-4清晰地展示了相应用法。</p>
+<p><img src="/img/r5.jpg" alt="1"><br>函数attach()可将数据框添加到R的搜索路径中，。R在遇到一个变量名以后，将检查搜索路<br>径中的数据框，以定位到这个变量。函数detach()将数据框从搜索路径中移除。值得注意的是，detach()并不会对数据框本身做任何处理。这句是可以省略的，但其实它应当被例行地放入代码中，因为这是一个好的编程习惯。</p>
+<p>###因子<br>类别（名义型）变量和有序类别（有序型）变量在R中称为因子（factor）。因子在R中非常重<br>要，因为它决定了数据的分析方式以及如何进行视觉呈现。你将在本书中通篇看到这样的例子。<br>函数factor()以一个整数向量的形式存储类别值，整数的取值范围是[1… k ]（其中k 是名义<br>型变量中唯一值的个数），同时一个由字符串（原始值）组成的内部向量将映射到这些整数上。<br>举例来说，假设有向量：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diabetes &lt;- c(“T1”,”T2”,”T3”,”T4”)</span><br></pre></td></tr></table></figure>
+<p>语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diabetes &lt;- factor(diabetes)</span><br></pre></td></tr></table></figure>
+<p>将此向量存储为(1, 2, 1, 1)，并在内部将其关联为<br>1=Type1和2=Type2（具体赋值根据字母顺序而定）。针对向量diabetes进行的任何分析都会将<br>其作为名义型变量对待，并自动选择适合这一测量尺度的统计方法。<br>要表示有序型变量，需要为函数factor()指定参数ordered=TRUE。给定向量：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">status &lt;- c(“Poor”,”Improved”,”Excellent”,”Poor”)</span><br></pre></td></tr></table></figure>
+<p>语句status &lt;- factor(status, ordered=TRUE)会将向量编码为(3, 2, 1, 3)，并在内部将这<br>些值关联为1=Excellent、2=Improved以及3=Poor。另外，针对此向量进行的任何分析都会将其作为有序型变量对待，并自动选择合适的统计方法。对于字符型向量，因子的水平默认依字母顺序创建。这对于因子status是有意义的，因为<br>“Excellent”、“Improved”、“Poor”的排序方式恰好与逻辑顺序相一致。如果“Poor”被编码为“Ailing”，会有问题，因为顺序将为“Ailing”、“Excellent”、“Improved”。如果理想中的顺序是“Poor”、“Improved”、“Excellent”，则会出现类似的问题。按默认的字母顺序排序的因子很少能够让人满意。你可以通过指定levels选项来覆盖默认排序。例如：<br>各水平的赋值将为1=Poor、2=Improved、3=Excellent。请保证指定的水平与数据中的真实值<br>相匹配，因为任何在数据中出现而未在参数中列举的数据都将被设为缺失值。</p>
+<p><img src="/img/r7.jpg" alt="2"></p>
+<p>###列表<br>列表（list）是R的数据类型中最为复杂的一种。一般来说，列表就是一些对象（或成分，<br>component）的有序集合。列表允许你整合若干（可能无关的）对象到单个对象名下。例如，某个列表中可能是若干向量、矩阵、数据框，甚至其他列表的组合。可以使用函数list()创建列表：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mylist &lt;- list(object1,object2,…)</span><br></pre></td></tr></table></figure>
+<p>其中的对象可以是目前为止讲到的任何结构。你还可以为列表中的对象命名：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mylist &lt;- list(name1=object1,name2=object2,…)</span><br></pre></td></tr></table></figure>
+<p><img src="/img/r8.jpg" alt="3"></p>
+<p><img src="/img/r9.jpg" alt="4"></p>
+<p>处理数据对象的实用函数</p>
+<p><img src="/img/r10.jpg" alt="5"></p>
+<p><img src="/img/r11.jpg" alt="6"></p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/05/23/r语言的数据集/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/05/23/first-access-to-r-/" >First access to R</a>
+			<span class="date"> 2014-05-23 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<h3 id="R语言的获取"><a href="#R语言的获取" class="headerlink" title="R语言的获取"></a>R语言的获取</h3><p>R可以在CRAN（Comprehensive R Archive Network） <a href="http://cran.r-project.org" target="_blank" rel="noopener">http://cran.r-project.org</a><br>上免费下载。Linux、Mac OS X和Windows都有相应编译好的二进制版本。R是一种区分大小写的解释型语言。你可以在命令提示符（&gt;）后每次输入并执行一条命令，或者一次性执行写在脚本文件中的一组命令。R中有多种数据类型，包括向量、矩阵、数据框（与数据集类似）以及列表（各种对象的集合）。</p>
+<p>R语句由函数和赋值构成。R使用 &lt;-，而不是传统的 = 作为赋值符号。例如，以下语句：<br><code>x&lt;- rnorm(5)</code><br>创建了一个名为x的向量对象，它包含5个来自标准正态分布的随机偏差。R语言中，使用等号赋值的语句并不常见，但是也不错。注释由# 开头。</p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p>若想大致了解R能够作出何种图形，在命令行中运行demo(graphics)即可。生成的部分图形如图1-5 所示。其他的演示还有demo(Hershey) 、demo(persp) 和demo(image)。要看到完整的演示列表，不加参数直接运行demo()即可。</p>
+<p><img src="/img/r1.jpg" alt="1"></p>
+<p>  工作空间（workspace）就是当前R的工作环境，它储存着所有用户定义的对象（向量、矩阵、函数、数据框、列表）。在一个R会话结束时，你可以将当前工作空间保存到一个镜像中， 并在下次启动R时自动载入它。各种命令可在R命令行中交互式地输入。使用上下方向键查看已输入命令的历史记录。这样我们就可以选择一个之前输入过的命令并适当修改，<br>   最后按回车重新执行它。当前的工作目录（working directory）是R用来读取文件和保存结果的默认目录。我们可以使用函数getwd()来查看当前的工作目录，或使用函数setwd()设定当前的工作目录。如果需要读入一个不在当前工作目录下的文件，则需在调用语句中写明完整的路径。记得使用引号闭合这些目录名和文件名。</p>
+<p> <img src="/img/r2.jpg" alt="2"> </p>
+<h3 id="输入和输出"><a href="#输入和输出" class="headerlink" title="输入和输出"></a>输入和输出</h3><p>启动R后将默认开始一个交互式的会话，从键盘接受输入并从屏幕进行输出。不过你也可以<br>处理写在一个脚本文件（一个包含了R语句的文件）中的命令集并直接将结果输出到多类目标中。</p>
+<p>####1. 输入<br>函数source(“filename”)可在当前会话中执行一个脚本。如果文件名中不包含路径，R将<br>假设此脚本在当前工作目录中。举例来说，source(“myscript.R”)将执行包含在文件<br>myscript.R中的R语句集合。依照惯例，脚本文件以.R作为扩展名，不过这并不是必需的。</p>
+<p>####2. 文本输出<br>函数sink(“filename”)将输出重定向到文件filename中。默认情况下，如果文件已经存<br>在，则它的内容将被覆盖。使用参数append=TRUE可以将文本追加到文件后，而不是覆盖它。<br>参数split=TRUE可将输出同时发送到屏幕和输出文件中。不加参数调用命令sink()将仅向屏幕<br>返回输出结果。</p>
+<p>####3. 图形输出<br>虽然sink()可以重定向文本输出，但它对图形输出没有影响。要重定向图形输出，使用<br>表1-4中列出的函数即可。最后使用dev.off()将输出返回到终端。</p>
+<p> <img src="/img/r3.jpg" alt="3"> </p>
+<p> 让我们通过一个示例来了解整个流程。假设我们有包含R代码的三个脚本文件script1.R、<br>script2.R和script3.R。</p>
+<p> <img src="/img/r6.jpg" alt="6"> </p>
+<h3 id="包的使用方法"><a href="#包的使用方法" class="headerlink" title="包的使用方法"></a>包的使用方法</h3><p>载入一个包之后，就可以使用一系列新的函数和数据集了。包中往往提供了演示性的小型数<br>据集和示例代码，能够让我们尝试这些新功能。帮助系统包含了每个函数的一个描述（同时带有<br>示例），每个数据集的信息也被包括其中。命令help(package=”package_name”)可以输出某<br>个包的简短描述以及包中的函数名称和数据集名称的列表。使用函数help()可以查看其中任意<br>函数或数据集的更多细节。这些信息也能以PDF帮助手册的形式从CRAN下载。</p>
+<p> <img src="/img/r4.jpg" alt="4"> </p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/05/23/first-access-to-r-/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/04/28/java-socket-编程/" >Java Socket 编程</a>
+			<span class="date"> 2014-04-28 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<h2 id="单用户请求的socket"><a href="#单用户请求的socket" class="headerlink" title="单用户请求的socket"></a>单用户请求的socket</h2><h3 id="服务器端代码："><a href="#服务器端代码：" class="headerlink" title="服务器端代码："></a>服务器端代码：</h3><p>   //Server_Socket.java<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">import java.io.*;</span><br><span class="line">import java.net.*;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class Server_Socket &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public static final int PORT=8083;</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) throws IOException&#123;</span><br><span class="line">      ServerSocket s=new ServerSocket(PORT);</span><br><span class="line">      System.out.println(&quot;Started:&quot;+ s);</span><br><span class="line">      try &#123;</span><br><span class="line">    	  Socket socket=s.accept();</span><br><span class="line">		  try &#123;</span><br><span class="line">			  </span><br><span class="line">			  System.out.println(&quot;Connection accpted:&quot;+socket);</span><br><span class="line">			  BufferedReader in=new BufferedReader(new InputStreamReader(socket.getInputStream()));</span><br><span class="line">			  PrintWriter out=new PrintWriter(new BufferedWriter(new OutputStreamWriter(</span><br><span class="line">					  </span><br><span class="line">					  </span><br><span class="line">					  socket.getOutputStream())),true);</span><br><span class="line">			  while(true)&#123;</span><br><span class="line">				  </span><br><span class="line">				  String str=in.readLine();</span><br><span class="line">				  if(str.equals(&quot;END&quot;))</span><br><span class="line">					  break;</span><br><span class="line">				  System.out.println(&quot;Enchoing&quot;+str);</span><br><span class="line">				  out.println(str + str +&quot;hahahaha&quot;);</span><br><span class="line">				  </span><br><span class="line">			  &#125;</span><br><span class="line">			  </span><br><span class="line">			</span><br><span class="line">		&#125; finally&#123;</span><br><span class="line">			System.out.println(&quot;closing......&quot;);</span><br><span class="line">			socket.close();</span><br><span class="line">		&#125;</span><br><span class="line">    	  </span><br><span class="line">    	  </span><br><span class="line">    	  </span><br><span class="line">    	  </span><br><span class="line">	&#125; finally &#123;</span><br><span class="line">		s.close();</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>###客户端代码</p>
+<p> //Client_Socket.java</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"> import java.io.*;</span><br><span class="line">import java.net.*;</span><br><span class="line">public class Client_Socket &#123;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	public static void main(String[] args) throws IOException &#123;</span><br><span class="line">		 InetAddress addr=InetAddress.getByName(null);</span><br><span class="line">		 System.out.println(&quot;addr=&quot;+addr);</span><br><span class="line">		 Socket socket=new Socket(addr, Server_Socket.PORT);</span><br><span class="line">		 try &#123;</span><br><span class="line">			 </span><br><span class="line">			 System.out.println(&quot;socket=&quot;+socket);</span><br><span class="line">			 </span><br><span class="line">			 BufferedReader in=new BufferedReader(new InputStreamReader(socket.getInputStream()));</span><br><span class="line">			  PrintWriter out=new PrintWriter(new BufferedWriter(new OutputStreamWriter(</span><br><span class="line">					  </span><br><span class="line">					  </span><br><span class="line">					  socket.getOutputStream())),true);</span><br><span class="line">			  for (int i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">				  out.println(&quot;www&quot;+i);</span><br><span class="line">				  String str=in.readLine();</span><br><span class="line">				  System.out.println(str);</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			out.println(&quot;END&quot;);</span><br><span class="line">		&#125; finally &#123;</span><br><span class="line">			</span><br><span class="line">			System.out.println(&quot;closing.......&quot;);</span><br><span class="line">			socket.close();</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>##多用户请求的Socket</p>
+<p>###服务器端：<br>//Mult.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">import java.io.*;</span><br><span class="line">import java.net.*;</span><br><span class="line"></span><br><span class="line">public class Mult extends Thread&#123;</span><br><span class="line">	private Socket socket;</span><br><span class="line">	private BufferedReader in;</span><br><span class="line">	private PrintWriter out;</span><br><span class="line">	</span><br><span class="line">  public Mult(Socket s) throws IOException &#123;</span><br><span class="line">	  socket=s;</span><br><span class="line">	  in=new BufferedReader(new InputStreamReader(socket.getInputStream()));</span><br><span class="line">	  out=new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())),true);</span><br><span class="line">	  </span><br><span class="line">	  start();</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line">  public void run()&#123;</span><br><span class="line">	  </span><br><span class="line">	  try &#123;</span><br><span class="line">		  while (true) &#123;</span><br><span class="line">			String string=in.readLine();</span><br><span class="line">			if (string.equals(&quot;END&quot;))  </span><br><span class="line">				 break;</span><br><span class="line">			System.out.println(&quot;Echoing&quot;+string);</span><br><span class="line">			out.println(string);</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		  System.out.println(&quot;closing....&quot;);</span><br><span class="line">		</span><br><span class="line">	&#125; catch (Exception e) &#123;</span><br><span class="line">		</span><br><span class="line">	&#125;finally&#123;</span><br><span class="line">		</span><br><span class="line">		try &#123;</span><br><span class="line">			socket.close();</span><br><span class="line">		&#125; catch (IOException e2) &#123;</span><br><span class="line">			</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	  </span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>//ServerSocketMult.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">import java.io.IOException;</span><br><span class="line">import java.net.ServerSocket;</span><br><span class="line">import java.net.Socket;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class ServerSocketMult &#123;</span><br><span class="line"></span><br><span class="line">  static final int PORT=8085;	</span><br><span class="line">	public static void main(String[] args) throws IOException&#123;</span><br><span class="line">		 ServerSocket s=new ServerSocket(PORT);</span><br><span class="line">		 System.out.println(&quot;Server Started&quot;);</span><br><span class="line">		 try &#123;</span><br><span class="line">			 while (true) &#123;</span><br><span class="line">				 Socket socket=s.accept();</span><br><span class="line">				 try &#123;</span><br><span class="line">					 new Mult(socket);</span><br><span class="line">					</span><br><span class="line">				&#125; catch (IOException e) &#123;</span><br><span class="line">					socket.close();</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&#125; finally &#123;</span><br><span class="line">			s.close();</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>###客户端代码：</p>
+<p>//ClientSocketMultThread.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">import java.io.*;</span><br><span class="line">import java.net.*;</span><br><span class="line">public class ClientSocketMultThread extends Thread &#123;</span><br><span class="line">	private Socket socket;</span><br><span class="line">	private BufferedReader in;</span><br><span class="line">	private PrintWriter out;</span><br><span class="line">	private static int counter=0;</span><br><span class="line">	private int id=counter++;</span><br><span class="line">	private static int threadCount=0;</span><br><span class="line">	public static int  threadCount() &#123;</span><br><span class="line">         return threadCount;		</span><br><span class="line">	&#125;</span><br><span class="line">	public ClientSocketMultThread(InetAddress addr)&#123;</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;Making client&quot;+id);</span><br><span class="line">		threadCount++;</span><br><span class="line">		try &#123;</span><br><span class="line">			socket=new Socket(addr,ServerSocketMult.PORT);</span><br><span class="line">		&#125; catch (IOException e) &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		try &#123;</span><br><span class="line">			 in=new BufferedReader(new InputStreamReader(socket.getInputStream()));</span><br><span class="line">			  out=new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())),true);</span><br><span class="line">			  </span><br><span class="line">			  start();</span><br><span class="line">		&#125; catch (IOException e) &#123;</span><br><span class="line">			try &#123;</span><br><span class="line">				socket.close();</span><br><span class="line">			&#125; catch (IOException e2) &#123;</span><br><span class="line">				</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public void run () &#123;</span><br><span class="line">		try&#123;</span><br><span class="line">			for (int i = 0; i &lt; 25; i++) &#123;</span><br><span class="line">				out.println(&quot;Client&quot;+id+&quot;:&quot;+i);</span><br><span class="line">				String str=in.readLine();</span><br><span class="line">				System.out.println(str);</span><br><span class="line">			&#125;</span><br><span class="line">			out.println(&quot;END&quot;);</span><br><span class="line">		&#125;catch (IOException e) &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;finally&#123;</span><br><span class="line">			</span><br><span class="line">			try &#123;</span><br><span class="line">				socket.close();</span><br><span class="line">			&#125; catch (IOException e) &#123;</span><br><span class="line">				</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">			threadCount--;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>//ClientSocketMult.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import java.io.IOException;</span><br><span class="line">import java.net.InetAddress;</span><br><span class="line">public class ClientSocketMult &#123;</span><br><span class="line">static final int MAX_THREADS=40;</span><br><span class="line">	</span><br><span class="line">	public static void main(String[] args) throws IOException,InterruptedException&#123;</span><br><span class="line">		InetAddress addr=InetAddress.getByName(null);</span><br><span class="line">		while (true) &#123;</span><br><span class="line">			if(ClientSocketMultThread.threadCount()&lt;MAX_THREADS)</span><br><span class="line">				 new ClientSocketMultThread(addr);</span><br><span class="line">			Thread.sleep(100);</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>##数据报通信（UDP）</p>
+<p>//DataGram.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">import java.net.*;</span><br><span class="line">public class DataGram &#123;</span><br><span class="line">	public static DatagramPacket toDatagramPacket(String s,InetAddress destIA,int destPort)</span><br><span class="line">	&#123;</span><br><span class="line">		byte[] buf=new byte[s.length()+1];</span><br><span class="line">		s.getBytes(0,s.length(),buf,0);</span><br><span class="line">		return new DatagramPacket(buf, buf.length,destIA,destPort);</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	public static String toString(DatagramPacket p) &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">		return new String(p.getData(),0,p.getLength());</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>###服务端程序</p>
+<p>//UDP_socket_server.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">import java.io.*;</span><br><span class="line">import java.net.*;</span><br><span class="line">import java.util.*;</span><br><span class="line"></span><br><span class="line">public class UDP_socket_server &#123;</span><br><span class="line">	static final int INPORT=1712;</span><br><span class="line">	private byte[] buf=new byte[1000];</span><br><span class="line">	private DatagramPacket dp=new DatagramPacket(buf, buf.length);</span><br><span class="line">	private DatagramSocket socket;</span><br><span class="line">	</span><br><span class="line">	public UDP_socket_server() &#123;</span><br><span class="line">		try &#123;</span><br><span class="line">			socket=new DatagramSocket(INPORT);</span><br><span class="line">			System.out.println(&quot;Server Started&quot;);</span><br><span class="line">			while(true)&#123;</span><br><span class="line">				</span><br><span class="line">				socket.receive(dp);</span><br><span class="line">				String rcvd=DataGram.toString(dp)+&quot;, from Address:&quot;+dp.getAddress()</span><br><span class="line">				+&quot;port:&quot;+dp.getPort();</span><br><span class="line">				System.out.println(rcvd);</span><br><span class="line">				String echoString=&quot;Echoed:&quot;+rcvd;</span><br><span class="line">				DatagramPacket echo=DataGram.toDatagramPacket(echoString, dp.getAddress(), dp.getPort());</span><br><span class="line">				socket.send(echo);</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">		&#125; catch (SocketException e) &#123;</span><br><span class="line">			System.err.println(&quot;can&apos;t open socket!&quot;);</span><br><span class="line">			System.exit(1);</span><br><span class="line">			</span><br><span class="line">		&#125;catch (IOException e) &#123;</span><br><span class="line">			System.err.println(&quot;Communication error&quot;);</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		new UDP_socket_server();</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>###客户端程序</p>
+<p>//UDP_socket_client.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">import java.io.*;</span><br><span class="line">import java.net.*;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class UDP_socket_client extends Thread&#123;</span><br><span class="line">	private DatagramSocket s;</span><br><span class="line">	private InetAddress hostAddress;</span><br><span class="line">	private byte[] buf= new byte[1000];</span><br><span class="line">	private DatagramPacket dp =new DatagramPacket(buf, buf.length);</span><br><span class="line">	private int id;</span><br><span class="line">	public UDP_socket_client(int identifier)&#123;</span><br><span class="line">		</span><br><span class="line">		id=identifier;</span><br><span class="line">		try &#123;</span><br><span class="line">			s=new DatagramSocket();</span><br><span class="line">			hostAddress=InetAddress.getByName(&quot;localhost&quot;);</span><br><span class="line">			</span><br><span class="line">		&#125; catch (UnknownHostException e) &#123;</span><br><span class="line">			System.err.println(&quot;can&apos;t find host!&quot;);</span><br><span class="line">			System.exit(1);</span><br><span class="line">			</span><br><span class="line">		&#125;catch (SocketException e) &#123;</span><br><span class="line">			System.err.println(&quot;can&apos;t open socket!&quot;);</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">			System.exit(1);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(&quot;UDP_socket_client starting&quot;);</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	public void run()&#123;</span><br><span class="line">		</span><br><span class="line">		try &#123;</span><br><span class="line">			for (int i = 0; i &lt; 25; i++) &#123;</span><br><span class="line">				String  outMessage =&quot;Client #&quot;+id+&quot;,message #&quot;+i;s.send(DataGram.toDatagramPacket(outMessage, hostAddress, UDP_socket_server.INPORT));</span><br><span class="line">				s.receive(dp);</span><br><span class="line">				String rcvd=&quot;Client #&quot;+id+&quot;,rcvd from&quot;+dp.getAddress()+&quot;,&quot;+dp.getPort()+</span><br><span class="line">				&quot;:&quot;+DataGram.toString(dp);</span><br><span class="line">				System.out.println(rcvd);</span><br><span class="line">				</span><br><span class="line">				 </span><br><span class="line">			&#125;</span><br><span class="line">		&#125; catch (IOException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">			System.exit(1);</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		for (int i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">			new UDP_socket_client(i).start();</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/04/28/java-socket-编程/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/04/23/locate-your-site-in-the-google-map/" >locate your site in the google map</a>
+			<span class="date"> 2014-04-23 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p> 主要本人运用HTML 5标签和JavaScript技术，将google map 嵌入自己的博客中，实现定位的功能，步骤如下：</p>
+<p> 本人想把地图作为widget显示，所以先在\themes\freemind\layout_widget 中创建了自己的模板文件 locate.ejs</p>
+<p> 代码如下：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;widget tag&quot;&gt;</span><br><span class="line">  &lt;h3 class=&quot;title&quot;&gt;定位&lt;/h3&gt;</span><br><span class="line">  &lt;p id=&quot;demo&quot;&gt;点击这个按钮，获得您的位置：&lt;/p&gt;</span><br><span class="line">&lt;button onclick=&quot;getLocation()&quot;&gt;试一下&lt;/button&gt;</span><br><span class="line">&lt;div id=&quot;mapholder&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;http://maps.google.com/maps/api/js?  sensor=false&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script  type=&quot;text/javascript&quot;  src=&quot;/js/locate.js&quot;&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后在 \themes\freemind\source\js路径中创建JS文件 locate.js 主要是通过google map api 获取当前的经度和纬度，作为google map 定位的参数。</p>
+<p>locate.js的代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"> var x=document.getElementById(&quot;demo&quot;);</span><br><span class="line">function getLocation()</span><br><span class="line">  &#123;</span><br><span class="line">  if (navigator.geolocation)</span><br><span class="line">    &#123;</span><br><span class="line">    navigator.geolocation.getCurrentPosition(showPosition,showError);</span><br><span class="line">    &#125;</span><br><span class="line">  else&#123;x.innerHTML=&quot;Geolocation is not supported by this browser.&quot;;&#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">function showPosition(position)</span><br><span class="line">  &#123;</span><br><span class="line">  lat=position.coords.latitude;</span><br><span class="line">  lon=position.coords.longitude;</span><br><span class="line">  latlon=new google.maps.LatLng(lat, lon)</span><br><span class="line">  mapholder=document.getElementById(&apos;mapholder&apos;)</span><br><span class="line">  mapholder.style.height=&apos;250px&apos;;</span><br><span class="line">  mapholder.style.width=&apos;250px&apos;;</span><br><span class="line"></span><br><span class="line">  var myOptions=&#123;</span><br><span class="line">  center:latlon,zoom:14,</span><br><span class="line">  mapTypeId:google.maps.MapTypeId.ROADMAP,</span><br><span class="line">  mapTypeControl:false,</span><br><span class="line">  navigationControlOptions:&#123;style:google.maps.NavigationControlStyle.SMALL&#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  var map=new google.maps.Map(document.getElementById(&quot;mapholder&quot;),myOptions);</span><br><span class="line">  var marker=new google.maps.Marker(&#123;position:latlon,map:map,title:&quot;You are here!&quot;&#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">function showError(error)</span><br><span class="line">  &#123;</span><br><span class="line">  switch(error.code) </span><br><span class="line">    &#123;</span><br><span class="line">    case error.PERMISSION_DENIED:</span><br><span class="line">      x.innerHTML=&quot;User denied the request for Geolocation.&quot;</span><br><span class="line">      break;</span><br><span class="line">    case error.POSITION_UNAVAILABLE:</span><br><span class="line">      x.innerHTML=&quot;Location information is unavailable.&quot;</span><br><span class="line">      break;</span><br><span class="line">    case error.TIMEOUT:</span><br><span class="line">      x.innerHTML=&quot;The request to get user location timed out.&quot;</span><br><span class="line">      break;</span><br><span class="line">    case error.UNKNOWN_ERROR:</span><br><span class="line">      x.innerHTML=&quot;An unknown error occurred.&quot;</span><br><span class="line">      break;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<p>  最后在主题的配置文件 _config.yml文件中，找到widgets:</p>
+<p>  在下面添加 -locate 就ok 了。</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/04/23/locate-your-site-in-the-google-map/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/04/17/spring-aop-配置中遇到的问题解决办法/" >Spring AOP 配置中遇到的问题解决办法</a>
+			<span class="date"> 2014-04-17 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>问题：</p>
+<h2 id="aop-advisor说明以及The-prefix-“aop”-for-element-“aop-config”-is-not-bound"><a href="#aop-advisor说明以及The-prefix-“aop”-for-element-“aop-config”-is-not-bound" class="headerlink" title="aop advisor说明以及The prefix “aop” for element “aop:config” is not bound."></a>aop advisor说明以及The prefix “aop” for element “aop:config” is not bound.</h2><p>解决：首先应该加载JAR包。</p>
+<p>还要在&lt;beans&gt;中要加入“xmlns：aop”的命名申明，</p>
+<p>并在“xsi：schemaLocation”中指定aop配置的schema的地址<br>配置文件如下：</p>
+<p>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;<br>&lt;beans xmlns=”<a href="http://www.springframework.org/schema/beans" target="_blank" rel="noopener">http://www.springframework.org/schema/beans</a> “<br>xmlns:xsi=”<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank" rel="noopener">http://www.w3.org/2001/XMLSchema-instance</a> “<br><span style="color: #ff9900;">xmlns:aop=”<a href="http://www.springframework.org/schema/aop" target="_blank" rel="noopener">http://www.springframework.org/schema/aop</a> “</span><br>xmlns:tx=”<a href="http://www.springframework.org/schema/tx" target="_blank" rel="noopener">http://www.springframework.org/schema/tx</a> “<br>xsi:schemaLocation=”<a href="http://www.springframework.org/schema/beans" target="_blank" rel="noopener">http://www.springframework.org/schema/beans</a><br><a href="http://www.springframework.org/schema/beans/spring-beans.xsd" target="_blank" rel="noopener">http://www.springframework.org/schema/beans/spring-beans.xsd</a><br><a href="http://www.springframework.org/schema/tx" target="_blank" rel="noopener">http://www.springframework.org/schema/tx</a><br><a href="http://www.springframework.org/schema/tx/spring-tx.xsd" target="_blank" rel="noopener">http://www.springframework.org/schema/tx/spring-tx.xsd</a><br><span style="color: #ff9900;">  <a href="http://www.springframework.org/schema/aop" target="_blank" rel="noopener">http://www.springframework.org/schema/aop</a></span><br><span style="color: #ff9900;">          <a href="http://www.springframework.org/schema/aop/spring-aop.xsd" target="_blank" rel="noopener">http://www.springframework.org/schema/aop/spring-aop.xsd</a></span> “&gt;</p>
+<p>一般情况下，将橙色部分加载到头部，问题就可以解决，但是有时候加上去之后，还是提示同样的问题，我们该怎么办呢？</p>
+<p>本人经过多次尝试，终于发现了问题，解决办法如下：</p>
+<p>首先要检查Spring的版本信息，参照文章  <a href="http://blog.csdn.net/xiaxiaorui2003/article/details/4582778" target="_blank" rel="noopener">http://blog.csdn.net/xiaxiaorui2003/article/details/4582778</a></p>
+<p>然后对照    <a href="http://www.springframework.org/schema/beans/spring-beans-2.0.xsd" target="_blank" rel="noopener">http://www.springframework.org/schema/beans/spring-beans-2.0.xsd</a></p>
+<p><a href="http://www.springframework.org/schema/tx/spring-tx-2.0.xsd" target="_blank" rel="noopener">http://www.springframework.org/schema/tx/spring-tx-2.0.xsd</a></p>
+<p><a href="http://www.springframework.org/schema/aop/spring-aop-2.0.xsd" target="_blank" rel="noopener">http://www.springframework.org/schema/aop/spring-aop-2.0.xsd</a></p>
+<p>这里最后的数字就是对应的版本号，改成你的Spring版本号就行了。问题解决！</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/04/17/spring-aop-配置中遇到的问题解决办法/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/04/13/spring-基础/" >Spring 基础</a>
+			<span class="date"> 2014-04-13 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>##Spring 基本知识</p>
+<p><img src="/img/20.jpg" alt="1"></p>
+<p>  从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。简单来说，Spring就是一个轻量级的控制反转（IoC）和面向切面（AOP）的容器框架。</p>
+<p>  下面从整体上认识一下Spring的主要特征：<br><em>轻量：从大小与开销两方面而言Spring都是轻量的。此外，Spring是非侵入式的：使用Spring,我们的类还是pojo类，完全不用继承和实现Spring的类和接口等。<br>也就是说，使用Spring的应用中的对象不依赖于Spring的特定类。</em></p>
+<p><em>IoC:Spring通过控制反转技术促进了松耦合。当应用了IoC,一个对象依赖的其它对象会通过被动的方式传递进来，而不是这个对象自己创建或者查找依赖对象。可以认为IoC与JNDI相反–不是我们自己控制对象从容器中查找依赖，而是容器在对象初始化时不等对象请求就主动将依赖传递给它，这就是DI–依赖注入。依赖注入有三种方式：构造函数注入，设值方法注入，借口注入，前两种最常用。<br>基本上就是对象不用自己动手管理和创建。完全由容器管理，我们只管用就行。</em></p>
+<p><em>AOP:Spring提供了面向切面的编程支持，AOP将与程序业务无关的内容分离提取，应用对象只实现它们应该做的–完成业务逻辑–仅此而已。它们并不负责其它的系统级关注点，例如日志或事务支持。AOP只是一种思路而不算是具体的实现技术。Spring的Aop是建立在Java的代理机制之上的<br>AOP将与业务无关的逻辑横切进真正的逻辑中。</em></p>
+<p>###《Spring参考手册》中定义了以下几个AOP的重要概念，结合以上代码分析如下：</p>
+<p> • 切面（Aspect） ：官方的抽象定义为“一个关注点的模块化，这个关注点可能会横切多个对象”，在本例中，“切面”就是类TestAspect所关注的具体行为，例如，AServiceImpl.barA()的调用就是切面TestAspect所关注的行为之一。“切面”在ApplicationContext中<aop:aspect>来配置。</aop:aspect></p>
+<p>•    连接点（Joinpoint） ：程序执行过程中的某一行为，例如，AServiceImpl.barA()的调用或者BServiceImpl.barB(String _msg, int _type)抛出异常等行为。<br>•    通知（Advice） ：“切面”对于某个“连接点”所产生的动作，例如，TestAspect中对com.spring.service包下所有类的方法进行日志记录的动作就是一个Advice。其中，一个“切面”可以包含多个“Advice”，例如TestAspect</p>
+<p>•    切入点（Pointcut） ：匹配连接点的断言，在AOP中通知和一个切入点表达式关联。例如，TestAspect中的所有通知所关注的连接点，都由切入点表达式execution(<em> com.spring.service.</em>.*(..))来决定</p>
+<p>•    目标对象（Target Object） ：被一个或者多个切面所通知的对象。例如，AServcieImpl和BServiceImpl，当然在实际运行时，Spring AOP采用代理实现，实际AOP操作的是TargetObject的代理对象。</p>
+<p>•    AOP代理（AOP Proxy） 在Spring AOP中有两种代理方式，JDK动态代理和CGLIB代理。默认情况下，TargetObject实现了接口时，则采用JDK动态代理，例如，AServiceImpl；反之，采用CGLIB代理，例如，BServiceImpl。强制使用CGLIB代理需要将 <aop:config> 的 proxy-target-class 属性设为true</aop:config></p>
+<h3 id="通知（Advice）类型"><a href="#通知（Advice）类型" class="headerlink" title="通知（Advice）类型"></a>通知（Advice）类型</h3><p>•    前置通知（Before advice） ：在某连接点（JoinPoint）之前执行的通知，但这个通知不能阻止连接点前的执行。ApplicationContext中在<aop:aspect>里面使用<aop:before>元素进行声明。例如，TestAspect中的doBefore方法</aop:before></aop:aspect></p>
+<p>•    后通知（After advice） ：当某连接点退出的时候执行的通知（不论是正常返回还是异常退出）。ApplicationContext中在<aop:aspect>里面使用<aop:after>元素进行声明。例如，TestAspect中的doAfter方法，所以AOPTest中调用BServiceImpl.barB抛出异常时，doAfter方法仍然执行</aop:after></aop:aspect></p>
+<p>•    返回后通知（After return advice） ：在某连接点正常完成后执行的通知，不包括抛出异常的情况。ApplicationContext中在<aop:aspect>里面使用<after-returning>元素进行声明。</after-returning></aop:aspect></p>
+<p>•    环绕通知（Around advice） ：包围一个连接点的通知，类似Web中Servlet规范中的Filter的doFilter方法。可以在方法的调用前后完成自定义的行为，也可以选择不执行。ApplicationContext中在<aop:aspect>里面使用<aop:around>元素进行声明。例如，TestAspect中的doAround方法。</aop:around></aop:aspect></p>
+<p>•    抛出异常后通知（After throwing advice） ： 在方法抛出异常退出时执行的通知。 ApplicationContext中在<aop:aspect>里面使用<aop:after-throwing>元素进行声明。<br>例如，TestAspect中的doThrowing方法。</aop:after-throwing></aop:aspect></p>
+<p>###下面的代码是Spring通知的用法：</p>
+<p>1,前置性通知<br>//SayHello.java</p>
+<pre><code>package sunyang.BeforeAdvice;
+
+public class SayHello {
+public void sayHello() {
+    System.out.println(&quot;Hello......&quot;);
+ }
+}
+</code></pre><p>//Smile.java</p>
+<pre><code> package sunyang.BeforeAdvice;
+
+ import java.lang.reflect.Method;
+
+ import  org.springframework.aop.MethodBeforeAdvice;
+
+public class Smile implements MethodBeforeAdvice {
+
+public void before(Method arg0, Object[] arg1, Object arg2)
+        throws Throwable {
+    System.out.println(&quot;Smile......&quot;);
+ }
+
+}
+</code></pre><p>// TestBeforeAdivce.java</p>
+<pre><code>package sunyang.BeforeAdvice;
+
+import org.springframework.aop.BeforeAdvice;
+import org.springframework.aop.framework.ProxyFactory;
+
+public class TestBeforeAdvice {
+public static void main(String[] args) {
+    SayHello sayHello = new SayHello();
+    BeforeAdvice ba = new Smile();
+    ProxyFactory pf = new ProxyFactory();
+    pf.setTarget(sayHello);
+    pf.addAdvice(ba);
+    SayHello sh = (SayHello) pf.getProxy();
+    sh.sayHello();
+}
+ }
+</code></pre><p>2 环绕型通知只需要更改第三个文件为如下：</p>
+<p>//TestMethodInterceptor.java</p>
+<pre><code>package sunyang.MethodInterceptor;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.springframework.aop.framework.ProxyFactory;
+
+public class TestMethodInterceptor {
+public static void main(String[] args) {
+    SayHello sayHello = new SayHello();
+    MethodInterceptor ba = new Smile();
+    ProxyFactory pf = new ProxyFactory();
+    pf.setTarget(sayHello);
+    pf.addAdvice(ba);
+    SayHello sh = (SayHello) pf.getProxy();
+    sh.sayHello();
+  }
+}
+</code></pre><p>*框架：Spring可以将简单的组件配置、组合成为复杂的应用。在Spring中，应用对象被声明式地组合，典型地是在一个XML文件里。Spring也提供了很多基础功能（事务管理、持久化框架集成等等），而用户就有更多的时间和精力去开发应用逻辑</p>
+<p>所有Spring的这些特征都能帮助我们够编写更干净、更可管理、并且更易于测试的代码。它们也为Spring中的各种模块提供了基础支持。</p>
+<p>*借助Spring,荣国依赖注入，AOP应用，面向接口编程，来降低业务组件之间的耦合度，增强系统的扩展性。</p>
+<p>*<br>虽然Spring可以一站式解决整个项目问题，但是Spring并不想取代那些已有的框架，而是与它们无缝地整合。Spring可以降低各种框架的使用难度，他提供了对各种优秀框架（如Struts、Hibernate、Hessian、Quartz等）的直接支持。</p>
+<p>使用Spring的主要目的是使J2EE易用和促进好的编程习惯，Spring的目标就是让已有的技术更加易用。<br>所以Spring的一个重要思想就是整合和兼容。<br>Spring 中所有组件都已Bean的形式存在，要想使用容器管理Bean ,就必须在配置文件中规定好各个bean 的属性和依赖关系。</p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/04/13/spring-基础/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/04/10/hibernate-and-jsp/" >hibernate and jsp</a>
+			<span class="date"> 2014-04-10 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>下面是关于hiberbate的学习资料：</p>
+<p> <img src="/img/12.jpg" alt="1"> <img src="/img/13.jpg" alt="2"> <img src="/img/14.jpg" alt="3"> <img src="/img/15.jpg" alt="4"></p>
+<p> 下面是jsp的9个内置对象：</p>
+<p> <img src="/img/16.jpg" alt="5"> <img src="/img/17.jpg" alt="6"> <img src="/img/18.jpg" alt="7"> <img src="/img/19.jpg" alt="8"></p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/04/10/hibernate-and-jsp/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2014/04/08/简单的jspservlet-应用/" >简单的Jsp+Servlet 应用</a>
+			<span class="date"> 2014-04-8 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <a id="more"></a>
+<p>开发应用的前提是配置好MyEclipse+tomcat+jdk, 具体的配置过程我就不详细说了，下面我就介绍一下创建一个简单的动态web应用的过程。</p>
+<p>下面是结果：</p>
+<p>&nbsp;</p>
+<p><img src="/img/11.jpg" alt="1"> <img src="/img/21.jpg" alt="2"></p>
+<p>首先新建一个web工程，在src下面新建一个sunyang的包，这个包里有两个类，User.java  和 HelloUserServlet.java</p>
+<p>代码分别是</p>
+<p>// User.java</p>
+<p>package sunyang;</p>
+<p>public class User {</p>
+<p>/**</p>
+<ul>
+<li>@param args<br>*/<br>private String username;//用户名</li>
+</ul>
+<p>public String getUsername() {<br>return username;<br>}</p>
+<p>public void setUsername(String username) {<br>this.username = username;<br>}</p>
+<p>}</p>
+<p>//HelloUserServlet.java</p>
+<p>package sunyang;</p>
+<p>import java.io.IOException;</p>
+<p>import javax.servlet.RequestDispatcher;<br>import javax.servlet.ServletException;<br>import javax.servlet.http.HttpServlet;<br>import javax.servlet.http.HttpServletRequest;<br>import javax.servlet.http.HttpServletResponse;</p>
+<p>public class HelloUserServlet extends HttpServlet {</p>
+<p>protected void doGet(HttpServletRequest req, HttpServletResponse resp)<br>throws ServletException, IOException {<br>// TODO Auto-generated method stub<br>doPost(req, resp);<br>}</p>
+<p>protected void doPost(HttpServletRequest req, HttpServletResponse resp)<br>throws ServletException, IOException {<br>// TODO Auto-generated method stub<br>String username=req.getParameter(“username”);<br>User user=new User();<br>user.setUsername(username);<br>//将User 对象添加到HttpServletRequest对象中<br>req.setAttribute(“user”, user);<br>//将请求转向制定的页面<br>RequestDispatcher rdt=req.getRequestDispatcher(“/helloUser.jsp”);<br>rdt.forward(req, resp);<br>}</p>
+<p>}</p>
+<p>然后再WebRoot的目录下新建名为helloUser.jsp的文件</p>
+<p>代码如下：</p>
+<p>//helloUser.jsp</p>
+<p>&amp;gt;&lt;%@ page language=”java” import=”java.util.*” pageEncoding=”UTF-8”%&gt;</p>
+<p>&lt;!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01 Transitional//EN”&gt;<br>&lt;jsp:useBean id=”user” scope=”request” class=”sunyang.User” /&gt;<br>&lt;html&gt;<br>&lt;head&gt;</p>
+<p>&lt;title&gt;Hello&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;<br>&lt;%<br>if(user.getUsername()!=null){<br>if(user.getUsername()==””){</p>
+<p>out.println(“Please enter a username”);</p>
+<p>}<br>else{ %&gt;</p>
+<p>hello:&lt;%=user.getUsername() %&gt;<br>&lt;%} } %&gt;<br>&lt;form action=”helloUser” method=”post”&gt;<br>&lt;input type=”text” name=”username” value=”” /&gt;<br>&lt;input type=”submit” name=”submit” value=”submit” /&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;<br>&lt;/html&gt;</p>
+<p>完了之后，还要把它部署到Servlet容器中去，只需在WEB_INF目录下的web.xml 文件中配置即可。增加如下内容即可实现部署：</p>
+<p>&lt;servlet&gt;<br>&lt;servlet-name&gt;HelloUserServlet&lt;/servlet-name&gt;<br>&lt;servlet-class&gt;sunyang.HelloUserServlet&lt;/servlet-class&gt;</p>
+<p>&lt;/servlet&gt;<br>&lt;servlet-mapping&gt;</p>
+<p>&lt;servlet-name&gt;HelloUserServlet&lt;/servlet-name&gt;<br>&lt;url-pattern&gt;/helloUser&lt;/url-pattern&gt;</p>
+<p>&lt;/servlet-mapping&gt;</p>
+<p>最后把项目部署到tomcat服务器上，然后再浏览器中运行即可。</p>
+<p>myeclipse 怎么设置让编辑器自动提示代码?</p>
+<pre id="best-content-1177886717">打开 Eclipse  -&gt; Window -&gt; Perferences -&gt; Java -&gt; Editor -&gt; Content Assist，在右边最下面一栏找到 auto-Activation ，下面有三个选项，找到第二个“Auto activation triggers for Java：”选项 
+
+在其后的文本框中会看到一个“.”存在。这表示：只有输入“.”之后才会有代码提示和自动补全，我们要修改的地方就是这里。把该文本框中的“.”换掉，换成“abcdefghijklmnopqrstuvwxyz.”，这样，你在Eclipse里面写Java代码就可以做到按“abcdefghijklmnopqrstuvwxyz.”中的任意一个字符都会有代码提示</pre>
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2014/04/08/简单的jspservlet-应用/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+
+		</div>
+
+		<!-- pagination -->
+		<div>
+  		<center>
+		<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+
+		
+		   <li class="next"> <a href="/page/2/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a> </li>          
+        
+	
+</ul>
+</div>
+
+  		</center>
+		</div>
+
+		
+		
+	</div> <!-- col-md-9 -->
+
+	
+		<div class="col-md-3">
+	<div id="sidebar">
+	
+			
+<div class="form-group has-success has-feedback">
+  <form action="//google.com/search" method="get" accept-charset="utf-8" >
+    <input type="search" name="q" results="0" placeholder="搜索" class="form-control">
+    <input type="hidden" name="q" value="site:lipeishen.github.io">	
+  </form>
+</div>
+
+		
+			<div class="widget tag">
+   <h3 class="title">简介</h3>
+   <img id="img" src="/img/1c.jpg" width="150px" height="150px" style="float:left;" alt="我的头像"/> 
+<button  class="btn btn-default" id="mybtn" style="align:center" data-toggle="tooltip" data-placement="bottom" title="本人IT男，坐标帝都，兴趣广泛，热爱交友，目前主要从事Java Web 开发，自学PHP技术，懂点node.js和mogodb数据库；
+   自认为也能从事C和C++开发的相关工作，未来目标是学习Andriod 与IOS开发，希望有兴趣的朋友可以一起探讨技术，联系方式 weichat 853478552">我的简介</button>
+ 
+ <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  $("#mybtn").click(function(){
+  
+   $("p").slideDown();
+  
+  
+  });
+ $(".btn1").click( function(){
+
+  $("p").slideUp();
+  
+  });
+
+});
+</script>
+
+<button class="btn1">隐藏</button>
+
+<p><strong><font size="4px" color="blue">本人IT男，坐标帝都，兴趣广泛，热爱交友，目前主要从事Java Web 开发，自学PHP技术，懂点node.js和mogodb数据库；
+   自认为也能从事C和C++开发的相关工作，未来目标是学习Andriod 与IOS开发，希望有兴趣的朋友可以一起探讨技术，联系方式 weichat 853478552
+   </font></strong>
+</p>
+</div>
+		
+			<div class="widget tag">
+<h3 class="title">定位</h3>
+<p id="demo">点击这个按钮，获得您的位置：</p>
+<button onclick="getLocation()">试一下</button>
+<div id="mapholder"></div>
+<script 
+
+ src="http://maps.google.com/maps/api/js?sensor=false"> 
+
+<!-- src="http://api.map.baidu.com/api?v=1.1&services=true" -->
+
+
+</script>
+<script  type="text/javascript" src="/js/locate.js">
+</script>
+</div>
+		
+			
+	<div class="widget">
+		<h4>分类</h4>
+		<ul class="tag_box inline list-unstyled">
+		
+			<li><a href="/categories/Android/">Android<span>1</span></a></li>
+		
+			<li><a href="/categories/Express/">Express<span>1</span></a></li>
+		
+			<li><a href="/categories/GitHub/">GitHub<span>1</span></a></li>
+		
+			<li><a href="/categories/Java/">Java<span>8</span></a></li>
+		
+			<li><a href="/categories/Node-js/">Node.js<span>2</span></a></li>
+		
+			<li><a href="/categories/R-Language/">R-Language<span>2</span></a></li>
+		
+			<li><a href="/categories/hexo/">hexo<span>2</span></a></li>
+		
+			<li><a href="/categories/技术/">技术<span>5</span></a></li>
+		
+			<li><a href="/categories/计算机技术知识/">计算机技术知识<span>1</span></a></li>
+		
+		</ul>
+	</div>
+
+		
+			
+  <style type="text/css">
+#cloud{background-color:#551A8B;color:#FFF}
+a{text-decoration:none;}
+strong{color:#FF0000}
+  </style>
+  
+  
+
+ <script type="text/javascript" src="js/swfobject.js"></script>
+ <h4 class="tag_box">标签云</h4> 
+ <div id="cloud">
+
+   
+
+<div class="tagcloudlist clearfix">
+     
+<script type="text/javascript">
+var cloud = new SWFObject("js/tagcloud.swf", "tagcloudflash", "200", "170", "9", "#ffffff");
+cloud.addParam("wmode", "transparent");
+cloud.addParam("allowScriptAccess", "always");
+cloud.addVariable("tcolor", "0xFFFFFF");
+cloud.addVariable("tcolor2", "0xFFFFFF");
+cloud.addVariable("hicolor", "0x999999");
+cloud.addVariable("tspeed", "150");
+cloud.addVariable("distr", "true");
+cloud.addVariable("mode", "tags");
+
+var str = '<tags>  <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Express/" style="font-size: 10px;">Express</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Html5/" style="font-size: 10px;">Html5</a> <a href="/tags/JSTL/" style="font-size: 10px;">JSTL</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/MVC/" style="font-size: 10px;">MVC</a> <a href="/tags/Net/" style="font-size: 10px;">Net</a> <a href="/tags/NetSpider/" style="font-size: 10px;">NetSpider</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/R-Language/" style="font-size: 15px;">R-Language</a> <a href="/tags/Socket/" style="font-size: 10px;">Socket</a> <a href="/tags/Spring/" style="font-size: 15px;">Spring</a> <a href="/tags/WorldPress/" style="font-size: 10px;">WorldPress</a> <a href="/tags/clock/" style="font-size: 10px;">clock</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hibernate/" style="font-size: 15px;">hibernate</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/jsp/" style="font-size: 10px;">jsp</a> <a href="/tags/tagcloud/" style="font-size: 10px;">tagcloud</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> </tags>';
+var newStr=encodeURIComponent(str);
+cloud.addVariable("tagcloud",newStr);
+cloud.write("cloud");
+</script>
+      
+     </div>   
+  
+
+
+</div>
+		
+			
+<div class="widget">
+  <h4>最新文章</h4>
+  <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2018/10/24/kubernets/" ><i class="fa fa-file-o"></i>kubernets</a>
+      </li>
+    
+      <li>
+        <a href="/2016/02/02/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
+      </li>
+    
+      <li>
+        <a href="/2014/10/17/num/" ><i class="fa fa-file-o"></i>Net Port Num</a>
+      </li>
+    
+      <li>
+        <a href="/2014/10/17/load-and-get-method-in-hibernate/" ><i class="fa fa-file-o"></i>load and get method in hibe...</a>
+      </li>
+    
+      <li>
+        <a href="/2014/10/08/java-common-problem/" ><i class="fa fa-file-o"></i>Java common problem</a>
+      </li>
+    
+  </ul>
+</div>
+
+		
+			<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+
+<div class="widget">
+	<h4>links</h4>
+ <!-- <ul class="blogroll list-unstyled">
+	
+		<li><i class="fa fa-github"></i><a href="https://github.com/lipeishen/hexo-theme-freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://www.github.com/lipeishen" title="My Github account." target="_blank"]);">My Github</a></li>
+	
+		<li><i class="fa fa-linkedin"></i><a href="http://blog.163.com/l_ps2009@126/" title="My Linkin account." target="_blank"]);">My 163blog</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://leeps.lofter.com/" title="" target="_blank"]);">My Lofter</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://coolshell.cn/" title="" target="_blank"]);">CoolShell</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://blog.pluskid.org/" title="" target="_blank"]);">PluskID</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://wangjun.easymorse.com/" title="" target="_blank"]);">王军的博客</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://www.easymorse.com/" title="" target="_blank"]);">Easymorse</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://hexo.io/index.html" title="" target="_blank"]);">Hexo</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://v3.bootcss.com/" title="" target="_blank"]);">Bootstrap</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://www.zi-han.net/theme/se7en/index.html" title="" target="_blank"]);">se7en</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://expressjs.com/guide.html" title="" target="_blank"]);">Express</a></li>
+	
+	</ul>
+  -->
+  
+  <select  style="width: 200px ">
+      
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="Freemind's Github repository.">Freemind</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="My Github account.">My Github</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-linkedin"></i> <a  title="My Linkin account.">My 163blog</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">My Lofter</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">CoolShell</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">PluskID</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">王军的博客</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">Easymorse</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">Hexo</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">Bootstrap</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">se7en</a></li>
+               
+      </option>
+
+  
+      <option> 
+            
+		<li><i class="fa fa-github"></i> <a  title="">Express</a></li>
+               
+      </option>
+
+  
+     
+  </select>
+ 
+  <button  class="btn1" id="opUrl">Go</button>  
+ 
+</div>
+
+
+		
+			<div class= "widget">
+<h4>微博秀</h4>
+<iframe width="100%" height="200" class="share_self"  
+frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=450&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=0&isFans=1&uid=2489062212&verifier=f1607a6f&dpc=1">
+</iframe> 
+</div>
+		
+			<div id="clustrmaps-widget" class="widget">
+<script type="text/javascript"> 
+var _clustrmaps = {'url' : 'http://lipeishen.github.io', 
+'user' : 1141455, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 
+'date' : '2014-04-29', 'lang' : 'zh', 'corners' : 'square' };
+(function (){ var s = document.createElement('script'); 
+s.type = 'text/javascript'; 
+s.async = true; 
+s.src = 'http://www2.clustrmaps.com/counter/map.js'; 
+var x = document.getElementsByTagName('script')[0]; 
+x.parentNode.insertBefore(s, x);})();
+</script>
+<noscript>
+<a href="http://www2.clustrmaps.com/user/ed6116acf">
+<img src="http://www2.clustrmaps.com/stats/maps-no_clusters/lipeishen.github.io-thumb.jpg" alt="Locations of visitors to this page" />
+</a>
+</noscript>
+
+</div>
+		
+	</div> <!-- sidebar -->
+</div> <!-- col-md-3 -->
+
+	
+	
+</div> <!-- row-fluid -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50964888-1', 'lipeishen.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> 
+<p>
+  &copy; 2018 李培申
+  
+      with help from <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2101cb656b2401ea0e7cd2045bd80432' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'hexo-generator-feed,hexo-migrator-rss,hexo-migrator-wordpress';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+  <a href="https://github.com/lipeishen"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+  <div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://lipeishen.github.io', 'user' : 1141455, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2014-04-29', 'lang' : 'zh', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www2.clustrmaps.com/user/ed6116acf"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/lipeishen.github.io-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50964888-1', 'lipeishen.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+   </html>

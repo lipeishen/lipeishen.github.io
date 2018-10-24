@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>use Express build a blog | Leeps</title>
+  <meta name="author" content="李培申">
+  
+  <meta name="description" content="前言  Npm 提供了大量的第三方模块，其中不乏许多Web框架，我们没有必要重复发明轮子，因而选择使用Express作为开发框架，因为它是目前最稳定、使用最广泛，而且Node.js官方推荐的唯一一个Web开发框架。
+ 12345678910111213141516171819202122232425">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="use Express build a blog"/>
+  <meta property="og:site_name" content="Leeps"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-50964888-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Leeps</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>目录
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>关于
+			</a>
+		  </li>
+		  
+		  
+		  <li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>动起来</a> </li>
+		
+
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> use Express build a blog</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+			
+
+	<!-- content -->
+	<div class="mypage">		
+	    <a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  Npm 提供了大量的第三方模块，其中不乏许多Web框架，我们没有必要重复发明轮子，因而选择使用Express作为开发框架，因为它是目前最稳定、使用最广泛，而且Node.js官方推荐的唯一一个Web开发框架。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line">##安装Express</span><br><span class="line"> 命令:  npm install  -g  express</span><br><span class="line">-g 说明是在全局模式下安装，这样我们就可以在命令行中使用它。</span><br><span class="line">Express 在初始化一个项目时需要指定模板引擎，默认支持Jade和 Ejs ，为了降低学习难度，我们推荐使用 ejs，但是express 3.X之后就不再默认支持 ejs了，所以安装express时最好装3.0以下的版本。</span><br><span class="line">如果想使用 3.x 的版本</span><br><span class="line">解决方案是</span><br><span class="line">安装一个插件</span><br><span class="line"></span><br><span class="line">    npm install express-partials</span><br><span class="line"></span><br><span class="line">安装完之后会在node_modules 文件夹里面多出一个文件夹 express-partials</span><br><span class="line">app.js代码里面添加这俩行代码即可运行正常</span><br><span class="line"></span><br><span class="line">    partials=require(&apos;express-partials&apos;);</span><br><span class="line">    app.use(partials());</span><br><span class="line"></span><br><span class="line">我们还是再express 3.0 一下开发吧，不用麻烦了。</span><br><span class="line"></span><br><span class="line">通过一下命令建立网站基本结构：</span><br><span class="line">`express  -e  ejs  microblog`</span><br><span class="line">完成之后安装依赖</span><br><span class="line"> `cd microblog  &amp;&amp; npm install`</span><br><span class="line">它自动安装了ejs 和express 。这是因为在package.json 文件中配好了，所有指定依赖的模块都会自动安装。</span><br><span class="line">package.json 文件中的 配置如下：</span><br><span class="line"> ![package.json](./public/img/QQ1.jpg)</span><br><span class="line"> </span><br><span class="line">接下来，运行 node app.js  就看到 服务器启动了，在浏览器中输入地址 http://localhost:3000  就可以看到express的欢迎界面了。</span><br><span class="line">关闭服务器用 Ctrl+ C </span><br><span class="line"></span><br><span class="line">##MongoDB 数据库的安装和配置</span><br><span class="line"></span><br><span class="line">开发过程中使用的数据库是 mongdb ,一种开源的非关系型的数据库，它没有表、行的概念，也咩有固定的模式和结构，数据以文档的形式存储。</span><br><span class="line">安装mongodb 请去 http://www.mongodb.org/ 查看如何安装，也可以按照这篇博客文章去安装 http://blog.csdn.net/yuyunli1989/article/details/16989715</span><br><span class="line"></span><br><span class="line">##连接mangodb数据库</span><br><span class="line">装好之后，在package.json 里面增加一行代码：</span><br><span class="line">` ,”mongodb”: “&gt;=0.9.9”`</span><br><span class="line">然后运行`npm install` 跟新依赖的模块。</span><br><span class="line">接下来的工作是创建settings.js 文件，用于保存数据库的连接信息，数据库名为 microblog ，settings.js的内容如下：</span><br><span class="line">`module.exports = &#123;</span><br><span class="line">  cookieSecret: &apos;microblogbyvoid&apos;,</span><br><span class="line">  db: &apos;microblog&apos;,</span><br><span class="line">  host: &apos;localhost&apos;,</span><br><span class="line">&#125;;`</span><br><span class="line">其中，db 是数据库的名称，host 是数据库的地址。cookieSecret 用于Cookie加密与数据库无关。</span><br><span class="line">接下来在models 子目录中创建db.js 内容是：</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">`var settings = require(&apos;../settings&apos;);</span><br><span class="line">var Db = require(&apos;mongodb&apos;).Db;</span><br><span class="line">var Connection = require(&apos;mongodb&apos;).Connection;</span><br><span class="line">var Server = require(&apos;mongodb&apos;).Server;</span><br><span class="line">module.exports = new Db(settings.db, new Server(settings.host, Connection.DEFAULT_PORT, &#123;&#125;));</span><br><span class="line">`以上代码通过module.exports 输出了创建的数据库连接</span><br><span class="line"></span><br><span class="line">##会话支持</span><br><span class="line">对于开发者来说，我们无须关心浏览器端的存储，需要关注的仅仅是如何通过这个唯一的标示符来识别用户。Express提供了会话中间件，默认情况是把用户信息存储到内存中，我们已经有了mongodb ，不妨把会话信息存储到数据库中，便于持久维护，为了使用这个功能，我们首先获得一个connect-mongo 的模块，在package.json 中添加一行代码：</span><br><span class="line">`，“connect-mongo”:”&gt;=0.1.7”`</span><br><span class="line">运行npm install 获得模块。</span><br><span class="line"></span><br><span class="line"> 打开 app.js 添加以下内容：</span><br><span class="line">`var settings = require(&apos;./settings&apos;);`</span><br><span class="line"></span><br><span class="line">  var MongoStore = require(&apos;connect-mongo&apos;);`</span><br><span class="line"></span><br><span class="line">此处输入 app.configure(function()&#123;</span><br><span class="line">  </span><br><span class="line">app.set(&apos;views&apos;, __dirname + &apos;/views&apos;);</span><br><span class="line">  app.set(&apos;view engine&apos;, &apos;ejs&apos;);</span><br><span class="line">  app.use(express.bodyParser());</span><br><span class="line">  app.use(express.methodOverride());</span><br><span class="line">  app.use(express.cookieParser());</span><br><span class="line">  app.use(express.session(&#123;</span><br><span class="line">    secret: settings.cookieSecret,</span><br><span class="line">    store: new MongoStore(&#123;</span><br><span class="line">      db: settings.db</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;));</span><br><span class="line">  app.use(express.router(routes));</span><br><span class="line">  app.use(express.static(__dirname + &apos;/public&apos;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">其中express.cookieParser() 是Cookie解析的中间件。Express.session() 提供会话支持，设置它的store 参数为MongoStore 实例，把会话信息存储到数据库中，以免丢失。</span><br></pre></td></tr></table></figure>
+<p>以上就是express框架和mangodb数据库的 常用的配置信息</p>
+	  
+	</div>
+	
+	<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2014/04/03/项目迁移的问题/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="/categories"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2014/04/01/github/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section class="comment">
+	
+		<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"lipeishen"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+	
+</section>
+
+	
+	</div> <!-- col-md-9/col-md-12 -->
+	
+	
+		<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2014-04-2 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/Express/">Express<span>1</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/Express/">Express<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> 
+<p>
+  &copy; 2018 李培申
+  
+      with help from <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2101cb656b2401ea0e7cd2045bd80432' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'hexo-generator-feed,hexo-migrator-rss,hexo-migrator-wordpress';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+  <a href="https://github.com/lipeishen"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+  <div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://lipeishen.github.io', 'user' : 1141455, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2014-04-29', 'lang' : 'zh', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www2.clustrmaps.com/user/ed6116acf"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/lipeishen.github.io-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50964888-1', 'lipeishen.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+   </html>
